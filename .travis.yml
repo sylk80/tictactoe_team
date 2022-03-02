@@ -1,6 +1,6 @@
  language: node_js
 node_js:
-  - 12
+  - 16
 
 addons:
   sonarcloud:
@@ -10,7 +10,7 @@ addons:
 
 
 before_install:
-  - npm i -g npm@7.12.1
+  - npm i -g npm@8.3.1
 script:
   - npm run coverage
   - npm run lint
