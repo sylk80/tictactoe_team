@@ -5,6 +5,7 @@
     "main": "tictactoe_team.js",
     "scripts": {
         "lint": "eslint \"./**/*.js\"",
+        "start": "npx run-func src/tictactoekata.js tictactoekata",
         "test": "jest",
         "coverage": "jest --coverage",
         "pre-commit": "lint-staged",

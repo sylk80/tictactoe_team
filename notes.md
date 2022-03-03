@@ -28,3 +28,11 @@
 ### Unit tests
 
 ### Technical Debts
+
+-   Decrease cyclomatic complexity and improve readability of functions
+-   NOTE: setTimeout causes issues with code coverage and testing complexity
+-   Split `tictactoekata.js` into separate files to match Domains
+-   remove console.log's so only `result` is returned by game
+-   Resolve any ESLint and Prettier issues
+-   Bug where we presume Round 9 = Draw (this isn't always the case)
+-   Improve readability of win conditions (e.g. constants, etc)
