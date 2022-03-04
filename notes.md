@@ -9,6 +9,30 @@
 
 ### Description
 
+### Domains
+
+-   There is a game
+-   There is a board
+-   There are players
+-   The game has two players
+-   The board is made up of cells
+-   The board is 3x3 (3 columns and 3 rows)
+-   The board is empty at the start of the game
+-   At the start of the game, the game board creation phase is printed
+-   The game is divided into rounds
+-   one player places their mark on the board each round
+-   A message of which player is taking their turn is printed each round
+-   The players alternate who takes a turn each round
+-   One player has an "X" mark, the other player has an "O" mark
+-   Player X always goes first
+-   The players can only place marks on cells that are not marked
+-   A player wins when they have 3 marks in the same row, column or diagonally
+-   The game is a draw if all cells of the board are marked and no player has won
+-   At the end of each round, the game checks if there is a win or draw condition
+-   The game ends when there is a winner or there is a draw
+-   The state of each round is made available at the end of the game
+-   At the end of the game, the game prints a message with the player that has won
+
 ### Scenario 1
 
 :radio_button: As a
