@@ -33,13 +33,29 @@
 -   The state of each round is made available at the end of the game
 -   At the end of the game, the game prints a message with the player that has won
 
-### Scenario 1
+### Scenario 1 - two bots, playing on the same board
 
-:radio_button: As a
+:radio_button: As a game observer
 
-:arrow_right: I want
+:arrow_right: I want to see a TicTacToe game play between two BOTs
 
-:arrow_left: So that
+:arrow_left: So that I can see how the state of the game changes each round
+
+### Scenario 2 - winning condition
+
+:radio_button: As a game observer
+
+:arrow_right: I want to see a TicTacToe game play between two BOTs
+
+:arrow_left: So that I can see how the game can be won
+
+### Scenario 3 - draw condition
+
+:radio_button: As a game observer
+
+:arrow_right: I want to see a TicTacToe game play between two BOTs
+
+:arrow_left: So that I can see how the game can end with a draw
 
 ### User acceptance test 1
 
