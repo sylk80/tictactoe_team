@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/sylk80/tictactoe_team.svg?branch=main)](https://travis-ci.com/sylk80/tictactoe_team)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=alert_status)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=coverage)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=bugs)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=code_smells)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)
-
 :heavy_check_mark: / :green_circle: - green test
 :x: / :red_circle: - failing test
 :dart: - goal
@@ -8,6 +6,8 @@
 :warning: - Techdebt
 
 ## Description
+
+The exercise involves refactoring the yellow belt TicTacToe Kata strictly adhering to an ATDD-BDD/TDD double loop cycle, extending it with an API and CLI layer following Hexagonal Architecture.
 
 ## Domains
 
@@ -61,6 +61,13 @@
 
 :heavy_exclamation_mark: Then the "The game will start with player X" message is printed
 
+#### Tech debt
+
+-   Split `tictactoekata.js` into separate files to match Domains
+-   Remove console.log's so only `result` is returned by game
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Resolve any ESLint and Prettier issues
+
 ### User acceptance test 1.2 - First round
 
 :heavy_plus_sign: Given the first round of a TicTacToe game
@@ -76,6 +83,12 @@
 :heavy_exclamation_mark: Then the "Player X:" message is printed
 
 :heavy_exclamation_mark: Then the board with the new mark is printed
+
+#### Tech debt
+
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Remove setTimeout from `singleStep` function
+-   Resolve any ESLint and Prettier issues
 
 ### User acceptance test 1.3 - Second round
 
@@ -93,6 +106,11 @@
 
 :heavy_exclamation_mark: Then the board with the new mark is printed
 
+#### Tech debt
+
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Resolve any ESLint and Prettier issues
+
 ### User acceptance test 1.4 - Game ends with maximum moves
 
 :heavy_plus_sign: Given the ninth round of a TicTacToe game
@@ -106,6 +124,11 @@
 :heavy_exclamation_mark: Then the game ends
 
 :heavy_exclamation_mark: Then an end game message is printed
+
+#### Tech debt
+
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Resolve any ESLint and Prettier issues
 
 ## User Story 2 - winning conditions
 
@@ -135,6 +158,13 @@
 
 :heavy_exclamation_mark: Then the game ends
 
+#### Tech debt
+
+-   Bug where we presume Round 9 = Draw (this isn't always the case)
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Improve readability of win conditions (e.g. constants, etc)
+-   Resolve any ESLint and Prettier issues
+
 ### User acceptance test 2.2 - Horizontal winning condition
 
 :heavy_plus_sign: Given Player O has placed their mark
@@ -155,6 +185,12 @@
 
 :heavy_exclamation_mark: Then the game ends
 
+#### Tech debt
+
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Improve readability of win conditions (e.g. constants, etc)
+-   Resolve any ESLint and Prettier issues
+
 ### User acceptance test 2.3 - Diagonal winning condition
 
 :heavy_plus_sign: Given Player X has placed their mark
@@ -172,6 +208,12 @@
 :heavy_exclamation_mark: Then the "PLAYER X WON!" message is printed
 
 :heavy_exclamation_mark: Then the game ends
+
+#### Tech debt
+
+-   Decrease cyclomatic complexity and improve readability of functions
+-   Improve readability of win conditions (e.g. constants, etc)
+-   Resolve any ESLint and Prettier issues
 
 ## User Story 3 - draw condition
 
@@ -195,12 +237,7 @@
 
 :heavy_exclamation_mark: Then the game ends
 
-### Technical Debts
+#### Tech debt
 
 -   Decrease cyclomatic complexity and improve readability of functions
--   NOTE: setTimeout causes issues with code coverage and testing complexity
--   Split `tictactoekata.js` into separate files to match Domains
--   remove console.log's so only `result` is returned by game
 -   Resolve any ESLint and Prettier issues
--   Bug where we presume Round 9 = Draw (this isn't always the case)
--   Improve readability of win conditions (e.g. constants, etc)
