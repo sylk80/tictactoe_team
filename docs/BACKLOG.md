@@ -1,13 +1,15 @@
-:heavy_check_mark: / :green_circle: - green test
-:x: / :red_circle: - failing test
-:dart: - goal
-:heavy_plus_sign: - items
-:hammer_and_pick: - refactor
-:warning: - Techdebt
-
 ## Description
 
 The exercise involves refactoring the yellow belt TicTacToe Kata strictly adhering to an ATDD-BDD/TDD double loop cycle, extending it with an API and CLI layer following Hexagonal Architecture.
+
+## Key
+
+✅ - green test
+❌ - failing test
+🎯 - goal
+➕ - items
+🛠 - refactor
+⛔️ - Techdebt
 
 ## Domains
 
@@ -35,31 +37,31 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ## User Story 1 - two bots, playing on the same board
 
-:radio_button: As a game observer
+As a game observer
 
-:arrow_right: I want to see a TicTacToe game play between two BOTs
+I want to see a TicTacToe game play between two BOTs
 
-:arrow_left: So that I can see how the state of the game changes each round
+So that I can see how the state of the game changes each round
 
 ### User acceptance test 1.1 - Game Board Creation phase
 
-:heavy_plus_sign: Given a new TicTacToe game
+Given a new TicTacToe game
 
-:construction: When the game starts
+When the game starts
 
-:heavy_exclamation_mark: Then the Game Board Creation phase is printed
+Then the Game Board Creation phase is printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then a new board is created
+Then a new board is created
 
-:heavy_exclamation_mark: Then the "Game Board Creation..." message is printed
+Then the "Game Board Creation..." message is printed
 
-:heavy_exclamation_mark: Then the empty board is printed
+Then the empty board is printed
 
-:heavy_exclamation_mark: Then the "Board Created." message is printed
+Then the "Board Created." message is printed
 
-:heavy_exclamation_mark: Then the "The game will start with player X" message is printed
+Then the "The game will start with player X" message is printed
 
 #### Tech debt
 
@@ -70,19 +72,19 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ### User acceptance test 1.2 - First round
 
-:heavy_plus_sign: Given the first round of a TicTacToe game
+Given the first round of a TicTacToe game
 
-:construction: When Player X places their mark on the board
+When Player X places their mark on the board
 
-:heavy_exclamation_mark: Then the first round of the game is printed
+Then the first round of the game is printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then the mark will be added to the board
+Then the mark will be added to the board
 
-:heavy_exclamation_mark: Then the "Player X:" message is printed
+Then the "Player X:" message is printed
 
-:heavy_exclamation_mark: Then the board with the new mark is printed
+Then the board with the new mark is printed
 
 #### Tech debt
 
@@ -92,19 +94,19 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ### User acceptance test 1.3 - Second round
 
-:heavy_plus_sign: Given the second round of a TicTacToe game
+Given the second round of a TicTacToe game
 
-:construction: When Player O places their mark on the board
+When Player O places their mark on the board
 
-:heavy_exclamation_mark: Then the second round of the game is printed
+Then the second round of the game is printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then the mark will be added to the board
+Then the mark will be added to the board
 
-:heavy_exclamation_mark: Then the "Player O:" message is printed
+Then the "Player O:" message is printed
 
-:heavy_exclamation_mark: Then the board with the new mark is printed
+Then the board with the new mark is printed
 
 #### Tech debt
 
@@ -113,17 +115,17 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ### User acceptance test 1.4 - Game ends with maximum moves
 
-:heavy_plus_sign: Given the ninth round of a TicTacToe game
+Given the ninth round of a TicTacToe game
 
-:construction: When the last Player places their mark on the board
+When the last Player places their mark on the board
 
-:heavy_exclamation_mark: Then the last round of the game is printed
+Then the last round of the game is printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then the game ends
+Then the game ends
 
-:heavy_exclamation_mark: Then an end game message is printed
+Then an end game message is printed
 
 #### Tech debt
 
@@ -132,31 +134,31 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ## User Story 2 - winning conditions
 
-:radio_button: As a game observer
+As a game observer
 
-:arrow_right: I want to see a TicTacToe game play between two BOTs
+I want to see a TicTacToe game play between two BOTs
 
-:arrow_left: So that I can see how the game can be won
+So that I can see how the game can be won
 
 ### User acceptance test 2.1 - Vertical winning condition
 
-:heavy_plus_sign: Given Player X has placed their mark
+Given Player X has placed their mark
 
-:construction: When the X marks fulfil a vertical winning condition
+When the X marks fulfil a vertical winning condition
 
-:heavy_exclamation_mark: Then the game ends and the results are printed
+Then the game ends and the results are printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then Player X has 3 X marks in the first column
+Then Player X has 3 X marks in the first column
 
-:heavy_exclamation_mark: Then Player X has 3 X marks in the second column
+Then Player X has 3 X marks in the second column
 
-:heavy_exclamation_mark: Then Player X has 3 X marks in the third column
+Then Player X has 3 X marks in the third column
 
-:heavy_exclamation_mark: Then the "PLAYER X WON!" message is printed
+Then the "PLAYER X WON!" message is printed
 
-:heavy_exclamation_mark: Then the game ends
+Then the game ends
 
 #### Tech debt
 
@@ -167,23 +169,23 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ### User acceptance test 2.2 - Horizontal winning condition
 
-:heavy_plus_sign: Given Player O has placed their mark
+Given Player O has placed their mark
 
-:construction: When the O marks fulfil a horizontal winning condition
+When the O marks fulfil a horizontal winning condition
 
-:heavy_exclamation_mark: Then the game ends and the results are printed
+Then the game ends and the results are printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then Player O has 3 O marks in the first row
+Then Player O has 3 O marks in the first row
 
-:heavy_exclamation_mark: Then Player O has 3 O marks in the second row
+Then Player O has 3 O marks in the second row
 
-:heavy_exclamation_mark: Then Player O has 3 O marks in the third row
+Then Player O has 3 O marks in the third row
 
-:heavy_exclamation_mark: Then the "PLAYER O WON!" message is printed
+Then the "PLAYER O WON!" message is printed
 
-:heavy_exclamation_mark: Then the game ends
+Then the game ends
 
 #### Tech debt
 
@@ -193,21 +195,21 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ### User acceptance test 2.3 - Diagonal winning condition
 
-:heavy_plus_sign: Given Player X has placed their mark
+Given Player X has placed their mark
 
-:construction: When the X marks fulfil a diagonal winning condition
+When the X marks fulfil a diagonal winning condition
 
-:heavy_exclamation_mark: Then the game ends and the results are printed
+Then the game ends and the results are printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then Player X has 3 X marks diagonally from top-left to bottom-right
+Then Player X has 3 X marks diagonally from top-left to bottom-right
 
-:heavy_exclamation_mark: Then Player X has 3 X marks diagonally from top-right to bottom-left
+Then Player X has 3 X marks diagonally from top-right to bottom-left
 
-:heavy_exclamation_mark: Then the "PLAYER X WON!" message is printed
+Then the "PLAYER X WON!" message is printed
 
-:heavy_exclamation_mark: Then the game ends
+Then the game ends
 
 #### Tech debt
 
@@ -217,25 +219,25 @@ The exercise involves refactoring the yellow belt TicTacToe Kata strictly adheri
 
 ## User Story 3 - draw condition
 
-:radio_button: As a game observer
+As a game observer
 
-:arrow_right: I want to see a TicTacToe game play between two BOTs
+I want to see a TicTacToe game play between two BOTs
 
-:arrow_left: So that I can see how the game can end with a draw
+So that I can see how the game can end with a draw
 
 ### User acceptance test 3.1 - Game ends with a draw
 
-:heavy_plus_sign: Given a mark is placed in the ninth round
+Given a mark is placed in the ninth round
 
-:construction: When none of the marks fulfil a winning condition
+When none of the marks fulfil a winning condition
 
-:heavy_exclamation_mark: Then the game ends and the results are printed
+Then the game ends and the results are printed
 
 #### Unit tests
 
-:heavy_exclamation_mark: Then the "GAME ENDS WITH A DRAW!" message is printed
+Then the "GAME ENDS WITH A DRAW!" message is printed
 
-:heavy_exclamation_mark: Then the game ends
+Then the game ends
 
 #### Tech debt
 
