@@ -33,7 +33,7 @@
 -   The state of each round is made available at the end of the game
 -   At the end of the game, the game prints a message with the player that has won
 
-## Scenario 1 - two bots, playing on the same board
+## User Story 1 - two bots, playing on the same board
 
 :radio_button: As a game observer
 
@@ -47,7 +47,9 @@
 
 :construction: When the game starts
 
-(:heavy_exclamation_mark: Then the Game Board Creation phase is printed)
+:heavy_exclamation_mark: Then the Game Board Creation phase is printed
+
+#### Unit tests
 
 :heavy_exclamation_mark: Then a new board is created
 
@@ -65,6 +67,10 @@
 
 :construction: When Player X places their mark on the board
 
+:heavy_exclamation_mark: Then the first round of the game is printed
+
+#### Unit tests
+
 :heavy_exclamation_mark: Then the mark will be added to the board
 
 :heavy_exclamation_mark: Then the "Player X:" message is printed
@@ -76,6 +82,10 @@
 :heavy_plus_sign: Given the second round of a TicTacToe game
 
 :construction: When Player O places their mark on the board
+
+:heavy_exclamation_mark: Then the second round of the game is printed
+
+#### Unit tests
 
 :heavy_exclamation_mark: Then the mark will be added to the board
 
@@ -89,11 +99,15 @@
 
 :construction: When the last Player places their mark on the board
 
+:heavy_exclamation_mark: Then the last round of the game is printed
+
+#### Unit tests
+
 :heavy_exclamation_mark: Then the game ends
 
 :heavy_exclamation_mark: Then an end game message is printed
 
-## Scenario 2 - winning conditions
+## User Story 2 - winning conditions
 
 :radio_button: As a game observer
 
@@ -103,9 +117,13 @@
 
 ### User acceptance test 2.1 - Vertical winning condition
 
-:heavy_plus_sign: Given Player X has won the game
+:heavy_plus_sign: Given Player X has placed their mark
 
-:construction: When we check the board for a winning condition
+:construction: When the X marks fulfil a vertical winning condition
+
+:heavy_exclamation_mark: Then the game ends and the results are printed
+
+#### Unit tests
 
 :heavy_exclamation_mark: Then Player X has 3 X marks in the first column
 
@@ -119,9 +137,13 @@
 
 ### User acceptance test 2.2 - Horizontal winning condition
 
-:heavy_plus_sign: Given Player O has won the game
+:heavy_plus_sign: Given Player O has placed their mark
 
-:construction: When we check the board for a winning condition
+:construction: When the O marks fulfil a horizontal winning condition
+
+:heavy_exclamation_mark: Then the game ends and the results are printed
+
+#### Unit tests
 
 :heavy_exclamation_mark: Then Player O has 3 O marks in the first row
 
@@ -135,9 +157,13 @@
 
 ### User acceptance test 2.3 - Diagonal winning condition
 
-:heavy_plus_sign: Given Player X has won the game
+:heavy_plus_sign: Given Player X has placed their mark
 
-:construction: When we check the board for a winning condition
+:construction: When the X marks fulfil a diagonal winning condition
+
+:heavy_exclamation_mark: Then the game ends and the results are printed
+
+#### Unit tests
 
 :heavy_exclamation_mark: Then Player X has 3 X marks diagonally from top-left to bottom-right
 
@@ -147,7 +173,7 @@
 
 :heavy_exclamation_mark: Then the game ends
 
-## Scenario 3 - draw condition
+## User Story 3 - draw condition
 
 :radio_button: As a game observer
 
@@ -157,15 +183,17 @@
 
 ### User acceptance test 3.1 - Game ends with a draw
 
-:heavy_plus_sign: Given the game is finished
+:heavy_plus_sign: Given a mark is placed in the ninth round
 
-:construction: When we check the board for a winning condition
+:construction: When none of the marks fulfil a winning condition
 
-:construction: And no Player has won
+:heavy_exclamation_mark: Then the game ends and the results are printed
+
+#### Unit tests
 
 :heavy_exclamation_mark: Then the "GAME ENDS WITH A DRAW!" message is printed
 
-### Unit tests
+:heavy_exclamation_mark: Then the game ends
 
 ### Technical Debts
 
