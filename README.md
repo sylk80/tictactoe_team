@@ -1,4 +1,9 @@
-[![Build Status](https://travis-ci.com/sylk80/tictactoe_team.svg?branch=main)](https://travis-ci.com/sylk80/tictactoe_team)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=alert_status)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=coverage)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=bugs)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=code_smells)](https://sonarcloud.io/dashboard?id=sylk80_tictactoe_team)
+[![Build Status](https://app.travis-ci.com/sylk80/tictactoe_team.svg?branch=main)](https://app.travis-ci.com/sylk80/tictactoe_team)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=alert_status&token=6d402d78c025db2655e3930d4dfae67e8ec17557)](https://sonarcloud.io/summary/new_code?id=sylk80_tictactoe_team)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=coverage&token=6d402d78c025db2655e3930d4dfae67e8ec17557)](https://sonarcloud.io/summary/new_code?id=sylk80_tictactoe_team)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=bugs&token=6d402d78c025db2655e3930d4dfae67e8ec17557)](https://sonarcloud.io/summary/new_code?id=sylk80_tictactoe_team)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=code_smells&token=6d402d78c025db2655e3930d4dfae67e8ec17557)](https://sonarcloud.io/summary/new_code?id=sylk80_tictactoe_team)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=sylk80_tictactoe_team&metric=vulnerabilities&token=6d402d78c025db2655e3930d4dfae67e8ec17557)](https://sonarcloud.io/summary/new_code?id=sylk80_tictactoe_team)
 
 # TicTacToe Kata
 
