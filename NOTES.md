@@ -47,9 +47,15 @@ Driver: Julian
 Navigator: Szilvia
 
 -   ✅ Fix eslint expect error
--   Run bdd test and commit
+-   ✅ Run bdd test and commit
+-   ✅ tech debt: create .nvmrc file and set to node 16.14.0
+-   🚧 create `game.test.js` and write unit test:
+    -   "Then a new board is created"
+-   🚨 Split `tictactoekata.js` into separate files to match Domains
+-   ✅ tech debt: delete tictactoe_team.js and tictactoe_team_test.js
 
 # Tech debt
 
 -   Implement `eslint-disable new-cap` for step files globally
 -   add "jest-formatting" and "jest" to .eslintrc plugins
+-   move jest config to jest.config.js and clean up "testMatch" property

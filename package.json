@@ -6,8 +6,9 @@
     "scripts": {
         "lint": "eslint \"./**/*.js\"",
         "start": "npx run-func src/tictactoekata.js tictactoekata",
-        "test": "jest",
-        "test:bdd": "jest ./__tests__/features",
+        "test:unit": "jest ./__tests__",
+        "test:unit:watch": "npm run test:unit -- --watchAll",
+        "test:bdd": "jest ./features",
         "test:bdd:watch": "npm run test:bdd -- --watchAll",
         "coverage": "jest --coverage",
         "pre-commit": "lint-staged",
@@ -36,6 +37,11 @@
     "jest": {
         "testEnvironment": "node",
         "collectCoverage": true,
+        "testMatch": [
+            "**/__tests__/**/*.[jt]s?(x)",
+            "**/?(*.)+(spec|test).[jt]s?(x)",
+            "**/*.steps.js"
+        ],
         "testResultsProcessor": "jest-sonar-reporter",
         "coveragePathIgnorePatterns": [
             "/node_modules/",
