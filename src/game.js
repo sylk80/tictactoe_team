@@ -1,10 +1,8 @@
+const Board = require("./board")
+
 class Game {
     constructor() {
-        this.board = [
-            [" ", " ", " "],
-            [" ", " ", " "],
-            [" ", " ", " "],
-        ]
+        this.board = new Board()
     }
 }
 

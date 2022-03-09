@@ -1,5 +1,11 @@
 class Board {
-    constructor() {}
+    constructor() {
+        this.board = [
+            [" ", " ", " "],
+            [" ", " ", " "],
+            [" ", " ", " "],
+        ]
+    }
 }
 
 module.exports = Board

@@ -59,3 +59,20 @@ Navigator: Szilvia
 -   Implement `eslint-disable new-cap` for step files globally
 -   add "jest-formatting" and "jest" to .eslintrc plugins
 -   move jest config to jest.config.js and clean up "testMatch" property
+
+# Pomodoro 4
+
+Driver: Julian
+Navigator: Szilvia
+
+-   ✅ Create unit test script
+-   ✅ Run unit test red phase and commit
+-   ✅ Create game.js file
+-   ✅ Initalize board
+-   ✅ Run unit test green phase and commit
+-   ✅ Create board.test.js
+-   ✅ Run unit test red phase and commit
+-   ✅ Create Board component
+-   ✅ Run unit test green phase and commit
+-   ✅ Refactor board component
+-   ✅ Commit rector
