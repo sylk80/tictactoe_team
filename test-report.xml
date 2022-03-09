@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js">
-    <testCase name="Given a new TicTacToe game When the game starts Then a new board is created" duration="3">
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
+    <testCase name="Game Flow Game Board Creation Phase" duration="3">
       <failure message="ReferenceError: Game is not defined"><![CDATA[ReferenceError: Game is not defined
-    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:4:26)
-    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (<anonymous>)
-    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41]]></failure>
+    at Object.stepFunction (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js:7:5)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-cucumber/src/feature-definition-creation.ts:134:65
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testCase>
   </file>
 </testExecutions>
