@@ -75,4 +75,27 @@ Navigator: Szilvia
 -   ✅ Create Board component
 -   ✅ Run unit test green phase and commit
 -   ✅ Refactor board component
--   ✅ Commit rector
+-   ✅ Commit refactor
+
+# Pomodoro 5
+
+Driver:
+Navigator:
+
+-   Create unit test - "Game Board Creation..." message
+-   Run unit test red phase and commit
+-   Decide where to put message - board/game
+-   Modify code of origin
+-   Run unit test green phase and commit
+-   Refactor code
+-   Run unit test green phase and commit
+-   Create unit test - empty game board printing
+-   Run unit test red phase and commit
+-   Modify code of origin
+-   Run unit test green phase and commit
+-   Refactor code
+-   Create unit test - "Board Created." message
+-   Run unit test red phase and commit
+-   Modify code of origin
+-   Run unit test green phase and commit
+-   Refactor code
