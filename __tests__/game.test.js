@@ -9,12 +9,18 @@ describe("Given a new TicTacToe game", () => {
     })
 
     describe("When the game starts", () => {
+        let initialRound
+
+        beforeEach(() => {
+            initialRound = game.result()[0]
+        })
+
         test("Then a new board is created", () => {
             expect(game.board).toBeDefined()
         })
 
         test('Then the "Game Board Creation..." message is printed', () => {
-            expect(game.result()[0]).toContain("Game Board Creation...\n")
+            expect(initialRound).toContain("Game Board Creation...\n")
         })
 
         test("Then the empty board is printed", () => {
@@ -26,11 +32,11 @@ describe("Given a new TicTacToe game", () => {
                 " | | ",
                 "\n",
             ].join("\n")
-            expect(game.result()[0]).toContain(emptyBoard)
+            expect(initialRound).toContain(emptyBoard)
         })
 
         test('Then the "Board Created." message is printed', () => {
-            expect(game.result()[0]).toContain("Board Created.\n")
+            expect(initialRound).toContain("Board Created.\n")
         })
     })
 })
