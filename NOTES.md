@@ -79,8 +79,8 @@ Navigator: Szilvia
 
 # Pomodoro 5
 
-Driver:
-Navigator:
+Driver: Julian
+Navigator: Szilvia
 
 -   Create unit test - "Game Board Creation..." message
 -   Run unit test red phase and commit
