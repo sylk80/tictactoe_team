@@ -10,7 +10,7 @@ describe("Given a new TicTacToe game", () => {
         test('Then the "Game Board Creation..." message is printed', () => {
             const game = new Game()
             game.play()
-            expect(game.result()[0]).toContain("Game Board Creation…")
+            expect(game.result()[0]).toContain("Game Board Creation...")
         })
     })
 })
