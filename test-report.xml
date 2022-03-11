@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/board.test.js">
-    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="3"/>
+    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="2"/>
   </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js">
-    <testCase name="Given a new TicTacToe game When the game starts Then a new board is created" duration="2"/>
+    <testCase name="Given a new TicTacToe game When the game starts Then a new board is created" duration="3"/>
     <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Game Board Creation...&quot; message is printed" duration="1"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the empty board is printed" duration="3">
-      <failure message="Error: expect(received).toContain(expected) // indexOf"><![CDATA[Error: expect(received).toContain(expected) // indexOf
-
-Expected substring: " | |·
--+-+-
- | |·
--+-+-
- | | "
-Received string:    "Game Board Creation..."
-    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:29:38)
-    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (<anonymous>)
-    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
-    </testCase>
+    <testCase name="Given a new TicTacToe game When the game starts Then the empty board is printed" duration="1"/>
   </file>
 </testExecutions>

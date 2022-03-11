@@ -24,6 +24,7 @@ describe("Given a new TicTacToe game", () => {
                 " | | ",
                 "-+-+-",
                 " | | ",
+                "\n",
             ].join("\n")
             game.play()
             expect(game.result()[0]).toContain(emptyBoard)

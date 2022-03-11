@@ -7,9 +7,16 @@ class Game {
     }
 
     initializerStep() {
-        const setupMessage = "Game Board Creation..."
+        let setupMessage = "Game Board Creation..."
         // result += "\n";
-        // result += drawTable(table);
+        setupMessage += [
+            " | | ",
+            "-+-+-",
+            " | | ",
+            "-+-+-",
+            " | | ",
+            "\n",
+        ].join("\n")
         // result += "Board Created.\n"
         // result += "The game will start with Player X\n";
         this.gameLog.push(setupMessage)
