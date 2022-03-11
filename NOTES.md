@@ -98,8 +98,8 @@ Driver: Julian
 Navigator: Szilvia
 
 -   ✅ Modify code of origin
--   Run unit test green phase and commit, new lines
--   Refactor code - test code - game.play
+-   ✅ Run unit test green phase and commit, new lines
+-   ✅ Refactor code - test code - game.play
 -   Create unit test - "Board Created." message
 -   Run unit test red phase and commit
 -   Modify code of origin

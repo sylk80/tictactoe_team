@@ -7,8 +7,7 @@ class Game {
     }
 
     initializerStep() {
-        let setupMessage = "Game Board Creation..."
-        // result += "\n";
+        let setupMessage = "Game Board Creation...\n"
         setupMessage += [
             " | | ",
             "-+-+-",

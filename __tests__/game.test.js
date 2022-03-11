@@ -5,6 +5,7 @@ describe("Given a new TicTacToe game", () => {
 
     beforeEach(() => {
         game = new Game()
+        game.play()
     })
 
     describe("When the game starts", () => {
@@ -13,8 +14,7 @@ describe("Given a new TicTacToe game", () => {
         })
 
         test('Then the "Game Board Creation..." message is printed', () => {
-            game.play()
-            expect(game.result()[0]).toContain("Game Board Creation...")
+            expect(game.result()[0]).toContain("Game Board Creation...\n")
         })
 
         test("Then the empty board is printed", () => {
@@ -26,7 +26,6 @@ describe("Given a new TicTacToe game", () => {
                 " | | ",
                 "\n",
             ].join("\n")
-            game.play()
             expect(game.result()[0]).toContain(emptyBoard)
         })
     })
