@@ -30,7 +30,7 @@ describe("Given a new TicTacToe game", () => {
         })
 
         test('Then the "Board Created." message is printed', () => {
-            expect(game.result()[0]).toContain("Board Created.")
+            expect(game.result()[0]).toContain("Board Created.\n")
         })
     })
 })

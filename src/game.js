@@ -16,7 +16,7 @@ class Game {
             " | | ",
             "\n",
         ].join("\n")
-        // result += "Board Created.\n"
+        setupMessage += "Board Created.\n"
         // result += "The game will start with Player X\n";
         this.gameLog.push(setupMessage)
     }
