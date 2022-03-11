@@ -106,3 +106,9 @@ Navigator: Szilvia
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
 -   ✅ Refactor code - test - initial round
+-   ✅ Run unit test green phase and commit
+-   ✅ Create unit test - "Board Created." message
+-   ✅ Run unit test red phase and commit
+-        Modify code of origin
+-        Run unit test green phase and commit
+-        Refactor code - test - initial round

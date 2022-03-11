@@ -38,5 +38,11 @@ describe("Given a new TicTacToe game", () => {
         test('Then the "Board Created." message is printed', () => {
             expect(initialRound).toContain("Board Created.\n")
         })
+
+        test('Then the "The game will start with player X" message is printed', () => {
+            expect(initialRound).toContain(
+                "The game will start with player X\n"
+            )
+        })
     })
 })
