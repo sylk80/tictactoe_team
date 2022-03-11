@@ -89,11 +89,11 @@ Navigator: Szilvia
 -   ✅ Run unit test green phase and commit
 -   ✅ Refactor code - test refactor Game object creation
 -   ✅ Run unit test green phase and commit
--   Create unit test - empty game board printing
--   Run unit test red phase and commit
+-   ✅ Create unit test - empty game board printing
+-   ✅ Run unit test red phase and commit
 -   Modify code of origin
 -   Run unit test green phase and commit
--   Refactor code
+-   Refactor code - test code - game.play
 -   Create unit test - "Board Created." message
 -   Run unit test red phase and commit
 -   Modify code of origin

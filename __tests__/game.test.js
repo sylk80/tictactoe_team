@@ -16,5 +16,17 @@ describe("Given a new TicTacToe game", () => {
             game.play()
             expect(game.result()[0]).toContain("Game Board Creation...")
         })
+
+        test("Then the empty board is printed", () => {
+            const emptyBoard = [
+                " | | ",
+                "-+-+-",
+                " | | ",
+                "-+-+-",
+                " | | ",
+            ].join("\n")
+            game.play()
+            expect(game.result()[0]).toContain(emptyBoard)
+        })
     })
 })
