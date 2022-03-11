@@ -109,6 +109,10 @@ Navigator: Szilvia
 -   ✅ Run unit test green phase and commit
 -   ✅ Create unit test - "Board Created." message
 -   ✅ Run unit test red phase and commit
--        Modify code of origin
--        Run unit test green phase and commit
--        Refactor code - test - initial round
+-   ✅ Modify code of origin
+-   ✅ Run unit test green phase and commit
+-       Refactor code
+
+# Tech Debt
+
+-   use test.each instead of separate test

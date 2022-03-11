@@ -41,7 +41,7 @@ describe("Given a new TicTacToe game", () => {
 
         test('Then the "The game will start with player X" message is printed', () => {
             expect(initialRound).toContain(
-                "The game will start with player X\n"
+                "The game will start with Player X\n"
             )
         })
     })
