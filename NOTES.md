@@ -82,13 +82,13 @@ Navigator: Szilvia
 Driver: Julian
 Navigator: Szilvia
 
--   Create unit test - "Game Board Creation..." message
--   Run unit test red phase and commit
--   Decide where to put message - board/game
--   Modify code of origin
--   Run unit test green phase and commit
--   Refactor code
--   Run unit test green phase and commit
+-   ✅ Create unit test - "Game Board Creation..." message
+-   ✅ Run unit test red phase and commit
+-   ✅ Decide where to put message - game.js
+-   ✅ Modify code of origin
+-   ✅ Run unit test green phase and commit
+-   ✅ Refactor code - test refactor Game object creation
+-   ✅ Run unit test green phase and commit
 -   Create unit test - empty game board printing
 -   Run unit test red phase and commit
 -   Modify code of origin
