@@ -28,5 +28,9 @@ describe("Given a new TicTacToe game", () => {
             ].join("\n")
             expect(game.result()[0]).toContain(emptyBoard)
         })
+
+        test('Then the "Board Created." message is printed', () => {
+            expect(game.result()[0]).toContain("Board Created.")
+        })
     })
 })
