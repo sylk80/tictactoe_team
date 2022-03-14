@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
-    <testCase name="Game Flow Game Board Creation Phase" duration="3"/>
+    <testCase name="Game Flow Game Board Creation Phase" duration="4"/>
+    <testCase name="Game Flow First Round" duration="6">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: "Player X:
+X| |·
+-+-+-
+ | |·
+-+-+-
+ | |··
+"
+Received: undefined
+    at Object.stepFunction (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js:49:30)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-cucumber/src/feature-definition-creation.ts:134:65
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

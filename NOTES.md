@@ -111,7 +111,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--         Refactor code
+-           Refactor code
 
 # Tech Debt
 
@@ -123,7 +123,7 @@ Driver: Julian
 Navigator: Balazs
 
 -   ✅ fix UAT 1.1 BDD test so that it passes
--   implement UAT 1.2 BDD test - red
+-   ✅ implement UAT 1.2 BDD test - red
 -   unit tests:
     -   Then the mark will be added to the board
     -   Then the "Player X:" message is printed
