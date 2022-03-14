@@ -25,7 +25,6 @@ class Game {
         this.initializerStep()
         const newX = Math.floor(Math.random() * 3)
         const newY = Math.floor(Math.random() * 3)
-        console.log(`X: ${newX}; Y: ${newY}`)
         this.board.board[newY][newX] = "X"
     }
 

@@ -1,10 +1,21 @@
 /* eslint-disable new-cap */
-const { Given, When, Then, Fusion, After } = require("jest-cucumber-fusion")
+const {
+    Given,
+    When,
+    Then,
+    Fusion,
+    Before,
+    After,
+} = require("jest-cucumber-fusion")
 const Game = require("../src/game")
 
-const mathRandomSpy = jest.spyOn(global.Math, "random")
+let mathRandomSpy
 
 let game
+
+Before(() => {
+    mathRandomSpy = jest.spyOn(global.Math, "random")
+})
 
 Given("a new TicTacToe game", () => {
     game = new Game()

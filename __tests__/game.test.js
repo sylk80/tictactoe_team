@@ -53,12 +53,12 @@ describe.only("Given the first round of a TicTacToe game", () => {
 
     beforeEach(() => {
         game = new Game()
+        mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
         game.play()
     })
 
     describe("When Player X places their mark on the board", () => {
         test("Then the mark will be added to the board", () => {
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
             expect(game.board.board[0][0]).toEqual("X")
         })
     })
