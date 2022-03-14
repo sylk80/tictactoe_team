@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
 const { Given, When, Then, Fusion } = require("jest-cucumber-fusion")
+const Game = require("../src/game")
 
 let game
 
@@ -13,16 +14,16 @@ When("the game starts", () => {
 
 Then("the Game Board Creation phase is printed", () => {
     const gameBoardCreationPhase = [
-        "Game Board Creation…",
+        "Game Board Creation...",
         " | | ",
         "-+-+-",
         " | | ",
         "-+-+-",
-        " | | ",
+        " | | \n",
         "Board Created.",
-        "The game will start with player X",
+        "The game will start with Player X\n",
     ].join("\n")
-    expect(game.result()).toEqual(gameBoardCreationPhase)
+    expect(game.result()[0]).toEqual(gameBoardCreationPhase)
 })
 
 Fusion("GameFlow.feature")
