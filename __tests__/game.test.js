@@ -47,7 +47,8 @@ describe("Given a new TicTacToe game", () => {
     })
 })
 
-describe("Given the first round of a TicTacToe game", () => {
+describe.only("Given the first round of a TicTacToe game", () => {
+    const mathRandomSpy = jest.spyOn(global.Math, "random")
     let game
 
     beforeEach(() => {
@@ -57,6 +58,7 @@ describe("Given the first round of a TicTacToe game", () => {
 
     describe("When Player X places their mark on the board", () => {
         test("Then the mark will be added to the board", () => {
+            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
             expect(game.board.board[0][0]).toEqual("X")
         })
     })

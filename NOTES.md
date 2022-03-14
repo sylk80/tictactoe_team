@@ -111,7 +111,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--               Refactor code
+-                 Refactor code
 
 # Tech Debt
 
@@ -141,3 +141,5 @@ Then the first round of the game is printed
 
 -   use test.each instead of separate test in `game.test.js`
 -   use `Before` in BDD tests to initialise `Game()`
+-   mocking of Math.random used in both BDD and Unit tests (could be made reusable)
+-   make Math.random mock values constants

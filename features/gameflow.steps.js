@@ -1,6 +1,8 @@
 /* eslint-disable new-cap */
-const { Given, When, Then, Fusion } = require("jest-cucumber-fusion")
+const { Given, When, Then, Fusion, After } = require("jest-cucumber-fusion")
 const Game = require("../src/game")
+
+const mathRandomSpy = jest.spyOn(global.Math, "random")
 
 let game
 
@@ -31,7 +33,6 @@ Given("the first round of a TicTacToe game", () => {
 })
 
 When("Player X places their mark on the board", () => {
-    const mathRandomSpy = jest.spyOn(global.Math, "random")
     mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
     game.play()
 })
@@ -47,6 +48,10 @@ Then("the first round of the game is printed", () => {
         "\n",
     ].join("\n")
     expect(game.result()[1]).toEqual(firstRound)
+})
+
+After(() => {
+    mathRandomSpy.mockRestore()
 })
 
 Fusion("GameFlow.feature")
