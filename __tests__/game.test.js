@@ -46,3 +46,18 @@ describe("Given a new TicTacToe game", () => {
         })
     })
 })
+
+describe("Given the first round of a TicTacToe game", () => {
+    let game
+
+    beforeEach(() => {
+        game = new Game()
+        game.play()
+    })
+
+    describe("When Player X places their mark on the board", () => {
+        test("Then the mark will be added to the board", () => {
+            expect(game.board.board[0][0]).toEqual("X")
+        })
+    })
+})

@@ -111,7 +111,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--           Refactor code
+-               Refactor code
 
 # Tech Debt
 
@@ -136,3 +136,8 @@ Given the first round of a TicTacToe game
 When Player X places their mark on the board
 
 Then the first round of the game is printed
+
+# Tech Debt
+
+-   use test.each instead of separate test in `game.test.js`
+-   use `Before` in BDD tests to initialise `Game()`
