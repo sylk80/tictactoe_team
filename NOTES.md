@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                             Refactor code
+-                               Refactor code
 
 # Pomodoro 7
 
@@ -137,6 +137,7 @@ Navigator: Szilvia, Balázs
 -   ✅ modify code of origin
 -   ✅ Run unit test green phase
 -   ✅ Refactor code - create Player class - for message as well
+-   ✅ Make game test fail with player class
 -   ✅ Create unit test for player class
 -   ✅ Run unit test for player phase red
 -   ✅ Modify logic in player class
@@ -145,3 +146,5 @@ Navigator: Szilvia, Balázs
 -   ✅ Run unit test for player mark phase red
 -   ✅ Modify logic in player class
 -   ✅ Run unit test for player mark phase green
+-   ✅ Modify game to use player class
+-   ✅ Run unit test for full refactor phase green
