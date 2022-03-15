@@ -54,12 +54,6 @@ Navigator: Szilvia
 -   🚨 Split `tictactoekata.js` into separate files to match Domains
 -   ✅ tech debt: delete tictactoe_team.js and tictactoe_team_test.js
 
-# Tech debt
-
--   Implement `eslint-disable new-cap` for step files globally
--   add "jest-formatting" and "jest" to .eslintrc plugins
--   move jest config to jest.config.js and clean up "testMatch" property
-
 # Pomodoro 4
 
 Driver: Julian
@@ -111,11 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                 Refactor code
-
-# Tech Debt
-
--   use test.each instead of separate test
+-                   Refactor code
 
 # Pomodoro 7
 
@@ -137,9 +127,13 @@ When Player X places their mark on the board
 
 Then the first round of the game is printed
 
-# Tech Debt
+# Pomodoro 8
 
--   use test.each instead of separate test in `game.test.js`
--   use `Before` in BDD tests to initialise `Game()`
--   mocking of Math.random used in both BDD and Unit tests (could be made reusable)
--   make Math.random mock values constants
+Driver: Julian
+Navigator: Szilvia, Balázs
+
+-   ✅ Create unit test - "Player X:" message is printed
+-   ✅ Run unit test red phase
+-   modify code of origin
+-   Run unit test green phase
+-   Refactor code - create Player class - for message is as well

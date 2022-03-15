@@ -47,7 +47,7 @@ describe("Given a new TicTacToe game", () => {
     })
 })
 
-describe.only("Given the first round of a TicTacToe game", () => {
+describe("Given the first round of a TicTacToe game", () => {
     const mathRandomSpy = jest.spyOn(global.Math, "random")
     let game
 
@@ -60,6 +60,11 @@ describe.only("Given the first round of a TicTacToe game", () => {
     describe("When Player X places their mark on the board", () => {
         test("Then the mark will be added to the board", () => {
             expect(game.board.board[0][0]).toEqual("X")
+        })
+
+        test('Then the "Player X:" message is printed', () => {
+            const firstRound = game.result()[1]
+            expect(firstRound).toContain("Player X:")
         })
     })
 })
