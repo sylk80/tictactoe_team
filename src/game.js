@@ -26,6 +26,7 @@ class Game {
         const newX = Math.floor(Math.random() * 3)
         const newY = Math.floor(Math.random() * 3)
         this.board.board[newY][newX] = "X"
+        this.gameLog.push("Player X:")
     }
 
     result() {
