@@ -4,12 +4,206 @@
     <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="2"/>
   </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js">
-    <testCase name="Given a new TicTacToe game When the game starts Then a new board is created" duration="3"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Game Board Creation...&quot; message is printed" duration="1"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the empty board is printed" duration="0"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Board Created.&quot; message is printed" duration="1"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;The game will start with player X&quot; message is printed" duration="0"/>
-    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the mark will be added to the board" duration="1"/>
-    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the &quot;Player X:&quot; message is printed" duration="1"/>
+    <testCase name="Given a new TicTacToe game When the game starts Then a new board is created" duration="5">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:7:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;result&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'result')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:15:33)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;board&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'board')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:19:25)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Game Board Creation...&quot; message is printed" duration="4">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:7:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;result&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'result')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:15:33)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="Error: expect(received).toContain(expected) // indexOf"><![CDATA[Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:23:34)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Given a new TicTacToe game When the game starts Then the empty board is printed" duration="1">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:7:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;result&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'result')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:15:33)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="Error: expect(received).toContain(expected) // indexOf"><![CDATA[Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:35:34)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Board Created.&quot; message is printed" duration="2">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:7:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;result&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'result')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:15:33)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="Error: expect(received).toContain(expected) // indexOf"><![CDATA[Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:39:34)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;The game will start with player X&quot; message is printed" duration="1">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:7:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;result&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'result')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:15:33)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="Error: expect(received).toContain(expected) // indexOf"><![CDATA[Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:43:34)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the mark will be added to the board" duration="3">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:55:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;board&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'board')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:62:25)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the &quot;Player X:&quot; message is printed" duration="2">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at new Game (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/src/game.js:6:28)
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:55:16)
+    at Object.asyncJestLifecycle (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:58:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;result&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'result')
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:66:37)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+  </file>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/player.test.js">
+    <testCase name="Given a TicTacToe player When the player is initialised Then a new player object is created" duration="2">
+      <failure message="ReferenceError: Player is not defined"><![CDATA[ReferenceError: Player is not defined
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/player.test.js:4:28)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

@@ -3,6 +3,7 @@ const Board = require("./board")
 class Game {
     constructor() {
         this.board = new Board()
+        this.playerX = new Player("X")
         this.gameLog = []
     }
 
@@ -25,8 +26,8 @@ class Game {
         this.initializerStep()
         const newX = Math.floor(Math.random() * 3)
         const newY = Math.floor(Math.random() * 3)
-        this.board.board[newY][newX] = "X"
-        this.gameLog.push("Player X:")
+        this.board.board[newY][newX] = this.playerX.mark
+        this.gameLog.push(`Player ${this.playerX.mark}:`)
     }
 
     result() {
