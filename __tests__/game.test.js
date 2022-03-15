@@ -66,5 +66,19 @@ describe("Given the first round of a TicTacToe game", () => {
             const firstRound = game.result()[1]
             expect(firstRound).toContain("Player X:")
         })
+
+        test("Then the board with the new mark is printed", () => {
+            const firstRoundBoard = [
+                "X| | ",
+                "-+-+-",
+                " | | ",
+                "-+-+-",
+                " | | ",
+                "\n",
+            ].join("\n")
+
+            const firstRound = game.result()[1]
+            expect(firstRound).toContain(firstRoundBoard)
+        })
     })
 })
