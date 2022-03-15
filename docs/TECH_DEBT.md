@@ -19,6 +19,6 @@
 # Pomodoro 8
 
 - Create Player class to display player name in message
-- Refactor test relocate board test from game test
+- Refactor game.test relocate board test from game test
 - Refactor board mark placing - create method for it in board
 

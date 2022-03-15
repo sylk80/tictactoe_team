@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                 Refactor code
+-                                     Refactor code
 
 # Pomodoro 7
 
@@ -150,6 +150,15 @@ Navigator: Szilvia, Balázs
 -   ✅ Run unit test for full refactor phase green
 -   ✅ Create unit test - board with the new mark is printed
 -   ✅ Run unit test red phase
--   Modify code of origin
--   Run unit test green phase
+-   ✅ Modify code of origin
+-   ✅ Run unit test green phase
 -   Refactor
+
+# Pomodoro 9
+
+Driver:
+Navigator:
+
+-   Refactor player class - create live round logic
+-   Add printing to board class
+-   Refactor game test to use before each

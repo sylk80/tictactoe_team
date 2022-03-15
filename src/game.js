@@ -28,7 +28,10 @@ class Game {
         const newX = Math.floor(Math.random() * 3)
         const newY = Math.floor(Math.random() * 3)
         this.board.board[newY][newX] = this.playerX.mark
-        this.gameLog.push(`Player ${this.playerX.mark}:`)
+        let round = `Player ${this.playerX.mark}:\n`
+        round += ["X| | ", "-+-+-", " | | ", "-+-+-", " | | ", "\n"].join("\n")
+
+        this.gameLog.push(round)
     }
 
     result() {
