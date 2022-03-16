@@ -10,10 +10,16 @@ class Game {
 
     initializerStep() {
         let setupMessage = "Game Board Creation...\n"
-        setupMessage += this.board.print().join("\n")
+        setupMessage += this.board.print()
         setupMessage += "Board Created.\n"
         setupMessage += "The game will start with Player X\n"
         this.gameLog.push(setupMessage)
+    }
+
+    gameStep(player) {
+        let result = `Player ${player.mark}:\n`
+        result += this.board.print()
+        return result
     }
 
     play() {
@@ -21,9 +27,7 @@ class Game {
         const newX = Math.floor(Math.random() * 3)
         const newY = Math.floor(Math.random() * 3)
         this.board.board[newY][newX] = this.playerX.mark
-        let round = `Player ${this.playerX.mark}:\n`
-        round += ["X| | ", "-+-+-", " | | ", "-+-+-", " | | ", "\n"].join("\n")
-
+        const round = this.gameStep(this.playerX)
         this.gameLog.push(round)
     }
 

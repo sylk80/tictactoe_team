@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                 Refactor code
+-                                                       Refactor code
 
 # Pomodoro 7
 
@@ -179,6 +179,14 @@ Navigator: Szilvia
 -   ✅ Run BDD test phase - red
 -   ✅ Create unit test - O mark is added to the board
 -   ✅ Run unit test red phase
--   Modify code of origin
+
+# Pomodoro 11
+
+Driver: Szilvia
+Navigator: Julian
+
+-   🚧 Modify code of origin
+    -   ✅ pull across `gameStep` and refactor
+    -   pull across `getNextMarkOnTheTable` and refactor
 -   Run unit test green phase
 -   Refactor

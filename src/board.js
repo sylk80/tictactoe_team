@@ -33,7 +33,7 @@ class Board {
             this.addRowDivider(row, drawnTable)
         }
         drawnTable.push("\n")
-        return drawnTable
+        return drawnTable.join("\n")
     }
 }
 
