@@ -11,3 +11,8 @@ Scenario: First Round
   Given the first round of a TicTacToe game
   When Player X places their mark on the board
   Then the first round of the game is printed
+
+Scenario: Second Round
+  Given the second round of a TicTacToe game
+  When Player O places their mark on the board
+  Then the second round of the game is printed

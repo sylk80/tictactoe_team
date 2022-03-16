@@ -22,3 +22,11 @@
 - Refactor game.test relocate board test from game test
 - Refactor board mark placing - create method for it in board
 
+
+# Pomodoro 10
+
+- GameFlowStep has to be refactored
+- Gameflow.step - refactor - new game in beforeEach
+- Split features?
+- Add unit test to cover game random mechanism trying to place a mark in an occupied cell
+

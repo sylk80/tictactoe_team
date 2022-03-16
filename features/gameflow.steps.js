@@ -61,6 +61,29 @@ Then("the first round of the game is printed", () => {
     expect(game.result()[1]).toEqual(firstRound)
 })
 
+Given("the second round of a TicTacToe game", () => {
+    game = new Game()
+})
+
+When("Player O places their mark on the board", () => {
+    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+    game.play()
+})
+
+Then("the second round of the game is printed", () => {
+    const secondRound = [
+        "Player X:",
+        "X| | ",
+        "-+-+-",
+        " |O| ",
+        "-+-+-",
+        " | | ",
+        "\n",
+    ].join("\n")
+    expect(game.result()[2]).toEqual(secondRound)
+})
+
 After(() => {
     mathRandomSpy.mockRestore()
 })

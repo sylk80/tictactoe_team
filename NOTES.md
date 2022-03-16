@@ -173,3 +173,7 @@ Navigator: Szilvia
 
 -   ✅ Refactor drawtable method
 -   ✅ Run unit test phase green
+-   Create 1.3 BDD test
+-   ✅ Create feature
+-   ✅ Create gameflow.step
+-   ✅ Run BDD test phase - red
