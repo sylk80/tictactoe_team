@@ -1,5 +1,7 @@
 const Game = require("../src/game")
 
+const mathRandomSpy = jest.spyOn(global.Math, "random")
+
 describe("Given a new TicTacToe game", () => {
     let game
 
@@ -48,7 +50,6 @@ describe("Given a new TicTacToe game", () => {
 })
 
 describe("Given the first round of a TicTacToe game", () => {
-    const mathRandomSpy = jest.spyOn(global.Math, "random")
     let game
 
     beforeEach(() => {
@@ -79,6 +80,18 @@ describe("Given the first round of a TicTacToe game", () => {
 
             const firstRound = game.result()[1]
             expect(firstRound).toContain(firstRoundBoard)
+        })
+    })
+})
+
+describe("Given the second round of a TicTacToe game", () => {
+    describe("When Player O places their mark on the board", () => {
+        test("Then the mark will be added to the board", () => {
+            const game = new Game()
+            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+            game.play()
+            expect(game.board.board[1][1]).toEqual("O")
         })
     })
 })

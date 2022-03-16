@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                               Refactor code
+-                                                 Refactor code
 
 # Pomodoro 7
 
@@ -173,7 +173,12 @@ Navigator: Szilvia
 
 -   ✅ Refactor drawtable method
 -   ✅ Run unit test phase green
--   Create 1.3 BDD test
+-   ✅ Create 1.3 BDD test
 -   ✅ Create feature
 -   ✅ Create gameflow.step
 -   ✅ Run BDD test phase - red
+-   ✅ Create unit test - O mark is added to the board
+-   ✅ Run unit test red phase
+-   Modify code of origin
+-   Run unit test green phase
+-   Refactor
