@@ -31,8 +31,8 @@ class Game {
         this.gameLog.push(firstRound)
 
         this.playerO.placeMarkOnTheBoard(this.board)
-        // const secondRound = this.gameStep(this.playerO)
-        this.gameLog.push(`Player ${this.playerO.mark}:\n`)
+        const secondRound = this.gameStep(this.playerO)
+        this.gameLog.push(secondRound)
     }
 
     result() {

@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                 Refactor code
+-                                                                   Refactor code
 
 # Pomodoro 7
 
@@ -201,5 +201,7 @@ Navigator: Balazs
 -   ✅ Refactor the test with beforeEach function
 -   ✅ Refactor the test file with the 'mockPlayerMove'
 -   ✅ Add afterAll function to reset mocking after test cases
+
+-   ✅ Board with a new mark is printed
 
 -   New unit test to check the cell is not empty
