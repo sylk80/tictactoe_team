@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/board.test.js">
-    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="2"/>
-    <testCase name="Given a TicTacToe board When the board is initialised Then a board printing method is created" duration="1"/>
+    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="3"/>
+    <testCase name="Given a TicTacToe board When the board is initialised Then a board printing method is created" duration="0"/>
     <testCase name="Given a TicTacToe board When a mark is placed on the boad Then the board should contain that mark" duration="1"/>
   </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/player.test.js">
@@ -15,11 +15,30 @@
     <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Game Board Creation...&quot; message is printed" duration="1"/>
     <testCase name="Given a new TicTacToe game When the game starts Then the empty board is printed" duration="1"/>
     <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Board Created.&quot; message is printed" duration="0"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;The game will start with player X&quot; message is printed" duration="0"/>
+    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;The game will start with player X&quot; message is printed" duration="1"/>
     <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the mark will be added to the board" duration="1"/>
-    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the &quot;Player X:&quot; message is printed" duration="0"/>
+    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the &quot;Player X:&quot; message is printed" duration="1"/>
     <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the board with the new mark is printed" duration="0"/>
-    <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the mark will be added to the board" duration="0"/>
+    <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the mark will be added to the board" duration="1"/>
     <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the &quot;Player O:&quot; message is printed" duration="1"/>
+    <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the board with the new mark is printed" duration="2">
+      <failure message="Error: expect(received).toContain(expected) // indexOf"><![CDATA[Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "X| |·
+-+-+-
+ |O|·
+-+-+-
+ | |··
+"
+Received string:    "Player O:
+"
+    at Object.<anonymous> (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js:135:33)
+    at Object.asyncJestTest (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

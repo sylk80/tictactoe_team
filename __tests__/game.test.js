@@ -120,5 +120,19 @@ describe("Given the second round of a TicTacToe game", () => {
             const secondRound = game.result()[2]
             expect(secondRound).toContain("Player O:")
         })
+
+        test("Then the board with the new mark is printed", () => {
+            const secondRoundBoard = [
+                "X| | ",
+                "-+-+-",
+                " |O| ",
+                "-+-+-",
+                " | | ",
+                "\n",
+            ].join("\n")
+
+            const secondRound = game.result()[2]
+            expect(secondRound).toContain(secondRoundBoard)
+        })
     })
 })
