@@ -9,7 +9,7 @@ class Player {
         const newX = Math.floor(Math.random() * 3)
         const newY = Math.floor(Math.random() * 3)
         //   if(table[newY][newX] === " ") {
-        board[newY][newX] = this.mark
+        board.board[newY][newX] = this.mark
         //       stepPlaced++
         //  }
         // }

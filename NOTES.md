@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                         Refactor code
+-                                                           Refactor code
 
 # Pomodoro 7
 
@@ -187,6 +187,14 @@ Navigator: Julian
 
 -   🚧 Modify code of origin
     -   ✅ pull across `gameStep` and refactor
-    -   🚧 pull across `getNextMarkOnTheTable` and refactor
+
+# Pomodoro 12
+
+Driver: Julian
+Navigator: Balazs
+
+-   🚧 pull across `getNextMarkOnTheTable` and refactor
 -   Run unit test green phase
 -   Refactor
+
+-   New unit test to check the cell is not empty
