@@ -104,13 +104,13 @@ Then the second round of the game is printed
 
 Then the mark will be added to the board
 
-And the cell is not empty
-
-  Then they place their mark in a different cell on the board
-
 Then the "Player O:" message is printed
 
 Then the board with the new mark is printed
+
+And the cell is not empty
+
+  Then they place their mark in a different cell on the board
 
 #### Tech debt
 

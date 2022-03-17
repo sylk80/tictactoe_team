@@ -93,5 +93,15 @@ describe("Given the second round of a TicTacToe game", () => {
             game.play()
             expect(game.board.board[1][1]).toEqual("O")
         })
+
+        test('Then the "Player O:" message is printed', () => {
+            const game = new Game()
+            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+            game.play()
+
+            const secondRound = game.result()[2]
+            expect(secondRound).toContain("Player O:")
+        })
     })
 })
