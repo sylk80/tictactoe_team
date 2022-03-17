@@ -10,6 +10,10 @@ class Board {
         ]
     }
 
+    placeMark([row, column], mark) {
+        this.board[row][column] = mark
+    }
+
     getCell(row, column) {
         return this.board[row][column]
     }
