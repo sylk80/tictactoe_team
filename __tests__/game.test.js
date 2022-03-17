@@ -1,6 +1,23 @@
 const Game = require("../src/game")
 
-const mathRandomSpy = jest.spyOn(global.Math, "random")
+const FIRST_ROW = 0.02
+const SECOND_ROW = 0.4
+const FIRST_COLUMN = 0.02
+const SECOND_COLUMN = 0.4
+
+let mathRandomSpy
+
+const mockPlayerMove = (row, column) => {
+    mathRandomSpy.mockReturnValueOnce(row).mockReturnValueOnce(column)
+}
+
+beforeEach(() => {
+    mathRandomSpy = jest.spyOn(global.Math, "random")
+})
+
+afterAll(() => {
+    mathRandomSpy.mockRestore()
+})
 
 describe("Given a new TicTacToe game", () => {
     let game
@@ -54,7 +71,7 @@ describe("Given the first round of a TicTacToe game", () => {
 
     beforeEach(() => {
         game = new Game()
-        mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+        mockPlayerMove(FIRST_ROW, FIRST_COLUMN)
         game.play()
     })
 
@@ -85,21 +102,21 @@ describe("Given the first round of a TicTacToe game", () => {
 })
 
 describe("Given the second round of a TicTacToe game", () => {
+    let game
+
+    beforeEach(() => {
+        game = new Game()
+        mockPlayerMove(FIRST_ROW, FIRST_COLUMN)
+        mockPlayerMove(SECOND_ROW, SECOND_COLUMN)
+        game.play()
+    })
+
     describe("When Player O places their mark on the board", () => {
         test("Then the mark will be added to the board", () => {
-            const game = new Game()
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-            game.play()
             expect(game.board.board[1][1]).toEqual("O")
         })
 
         test('Then the "Player O:" message is printed', () => {
-            const game = new Game()
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-            game.play()
-
             const secondRound = game.result()[2]
             expect(secondRound).toContain("Player O:")
         })
