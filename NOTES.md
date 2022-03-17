@@ -196,6 +196,8 @@ Navigator: Balazs
 -   🚧 pull across `getNextMarkOnTheTable` and refactor
 -   ✅ Run unit test green phase
 -   ✅ Refactor
--
+
+-   ✅ Player O mark is on the board
+-   Refactor the test with beforeEach function
 
 -   New unit test to check the cell is not empty

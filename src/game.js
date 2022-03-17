@@ -32,7 +32,7 @@ class Game {
 
         this.playerO.placeMarkOnTheBoard(this.board)
         // const secondRound = this.gameStep(this.playerO)
-        // this.gameLog.push(secondRound)
+        this.gameLog.push(`Player ${this.playerO.mark}:\n`)
     }
 
     result() {
