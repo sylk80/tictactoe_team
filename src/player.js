@@ -14,7 +14,7 @@ class Player {
         //       stepPlaced++
         //  }
         // }
-        return board
+        // return board
     }
 }
 
