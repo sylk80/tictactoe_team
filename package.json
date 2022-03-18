@@ -38,7 +38,7 @@
         "testEnvironment": "node",
         "collectCoverage": true,
         "testMatch": [
-            "**/__tests__/**/*.[jt]s?(x)",
+            "**/__tests__/**/?(*.)+(spec|test).[jt]s?(x)",
             "**/?(*.)+(spec|test).[jt]s?(x)",
             "**/*.steps.js"
         ],

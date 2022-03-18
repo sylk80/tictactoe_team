@@ -1,9 +1,20 @@
 const Player = require("../src/player")
 const Board = require("../src/board")
+const { mockPlayerMove, POSITIONS } = require("./utils/playermove.mock")
 
-const mathRandomSpy = jest.spyOn(global.Math, "random")
+const { FIRST_ROW, SECOND_ROW, FIRST_COLUMN, SECOND_COLUMN } = POSITIONS
+
+let mathRandomSpy
 
 describe("Given a TicTacToe player", () => {
+    beforeEach(() => {
+        mathRandomSpy = jest.spyOn(global.Math, "random")
+    })
+
+    afterAll(() => {
+        mathRandomSpy.mockRestore()
+    })
+
     describe("When the player is initialised", () => {
         let player
         const mark = "X"
@@ -24,39 +35,35 @@ describe("Given a TicTacToe player", () => {
     describe("When the player is taking their turn", () => {
         let player
         const mark = "X"
+        let board
 
         beforeEach(() => {
             player = new Player(mark)
+            board = new Board()
         })
 
         test("Then a mark is placed on the board", () => {
-            const board = new Board()
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+            mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
             player.placeMarkOnTheBoard(board)
-            expect(board.board[0][0]).toEqual(player.mark)
+            expect(board.getCell(0, 0)).toEqual(player.mark)
         })
 
         describe("And the cell is not empty", () => {
-            test("Then the original mark is kept in the cell", () => {
-                const board = new Board()
+            beforeEach(() => {
                 board.board[0][0] = "O"
-                mathRandomSpy
-                    .mockReturnValueOnce(0.02)
-                    .mockReturnValueOnce(0.02)
+            })
+
+            test("Then the original mark is kept in the cell", () => {
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
                 player.placeMarkOnTheBoard(board)
-                expect(board.board[0][0]).toEqual("O")
+                expect(board.getCell(0, 0)).toEqual("O")
             })
 
             test("Then they place their mark in a different cell on the board", () => {
-                const board = new Board()
-                board.board[0][0] = "O"
-                mathRandomSpy
-                    .mockReturnValueOnce(0.02)
-                    .mockReturnValueOnce(0.02)
-                    .mockReturnValueOnce(0.4)
-                    .mockReturnValueOnce(0.4)
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
                 player.placeMarkOnTheBoard(board)
-                expect(board.board[1][1]).toEqual(player.mark)
+                expect(board.getCell(1, 1)).toEqual(player.mark)
             })
         })
     })

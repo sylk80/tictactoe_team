@@ -30,3 +30,8 @@
 - Split features?
 - Add unit test to cover game random mechanism trying to place a mark in an occupied cell
 
+
+# Pomodoro 14
+
+- update BDD test to use test util constants
+- fix unreliability of `game.test.js` - mocking related
