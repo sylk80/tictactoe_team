@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                               Refactor code
+-                                                                                 Refactor code
 
 # Pomodoro 7
 
@@ -238,10 +238,10 @@ Navigator: Szilvia
     -   ✅ modify Board
     -   ✅ green
     -   ✅ refactor test
-    -   Then they place their mark in a different cell on the board
-    -   red
+    -   ✅ Then they place their mark in a different cell on the board
+    -   ✅ red
     -   green
-    -   refactor
+    -   refactor - move random constants to a test util
 -   fix unreliability of `game.test.js`
 -   Look into why Second Round BDD test still failing
 -   Create UAT 1.4 BDD steps

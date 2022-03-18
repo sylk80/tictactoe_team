@@ -46,6 +46,18 @@ describe("Given a TicTacToe player", () => {
                 player.placeMarkOnTheBoard(board)
                 expect(board.board[0][0]).toEqual("O")
             })
+
+            test("Then they place their mark in a different cell on the board", () => {
+                const board = new Board()
+                board.board[0][0] = "O"
+                mathRandomSpy
+                    .mockReturnValueOnce(0.02)
+                    .mockReturnValueOnce(0.02)
+                    .mockReturnValueOnce(0.4)
+                    .mockReturnValueOnce(0.4)
+                player.placeMarkOnTheBoard(board)
+                expect(board.board[1][1]).toEqual(player.mark)
+            })
         })
     })
 })
