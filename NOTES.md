@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                           Refactor code
+-                                                                             Refactor code
 
 # Pomodoro 7
 
@@ -237,6 +237,7 @@ Navigator: Szilvia
     -   ✅ red
     -   ✅ modify Board
     -   ✅ green
+    -   ✅ refactor test
         Then they place their mark in a different cell on the board
     -   red
     -   green
