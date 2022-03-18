@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/board.test.js">
-    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="3"/>
-    <testCase name="Given a TicTacToe board When the board is initialised Then a board printing method is created" duration="4"/>
-    <testCase name="Given a TicTacToe board When a mark is placed on the boad Then the board should contain that mark" duration="2"/>
-  </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/player.test.js">
-    <testCase name="Given a TicTacToe player When the player is initialised Then a new player object is created" duration="2"/>
-    <testCase name="Given a TicTacToe player When the player is initialised Then the player&apos;s mark is set" duration="1"/>
-    <testCase name="Given a TicTacToe player When the player is taking their turn Then a mark is placed on the board" duration="1"/>
-  </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js">
-    <testCase name="Given a new TicTacToe game When the game starts Then a new board is created" duration="5"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Game Board Creation...&quot; message is printed" duration="1"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the empty board is printed" duration="1"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;Board Created.&quot; message is printed" duration="1"/>
-    <testCase name="Given a new TicTacToe game When the game starts Then the &quot;The game will start with player X&quot; message is printed" duration="0"/>
-    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the mark will be added to the board" duration="1"/>
-    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the &quot;Player X:&quot; message is printed" duration="0"/>
-    <testCase name="Given the first round of a TicTacToe game When Player X places their mark on the board Then the board with the new mark is printed" duration="1"/>
-    <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the mark will be added to the board" duration="0"/>
-    <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the &quot;Player O:&quot; message is printed" duration="0"/>
-    <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the board with the new mark is printed" duration="1"/>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
+    <testCase name="Game Flow Game Board Creation Phase" duration="4"/>
+    <testCase name="Game Flow First Round" duration="2"/>
+    <testCase name="Game Flow Second Round" duration="11">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 1
+
+@@ -1,6 +1,6 @@
+- Player X:
++ Player O:
+  X| | 
+  -+-+-
+   |O| 
+  -+-+-
+   | | 
+    at Object.stepFunction (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js:84:30)
+    at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-cucumber/src/feature-definition-creation.ts:134:65
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
   </file>
 </testExecutions>
