@@ -16,13 +16,21 @@ describe("Given a TicTacToe board", () => {
         })
     })
 
-    describe("When a mark is placed on the boad", () => {
+    describe("When a mark is placed on the board", () => {
         test("Then the board should contain that mark", () => {
             const mark = "X"
             const coordinates = [0, 1]
             const [row, column] = coordinates
             board.placeMark(coordinates, mark)
             expect(board.board[row][column]).toEqual(mark)
+        })
+
+        test("Then the board indicates that the cell is not empty", () => {
+            const mark = "X"
+            const coordinates = [0, 1]
+            const [row, column] = coordinates
+            board.placeMark(coordinates, mark)
+            expect(board.isCellEmpty(row, column)).toEqual(false)
         })
     })
 })

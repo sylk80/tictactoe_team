@@ -3,7 +3,7 @@
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
     <testCase name="Game Flow Game Board Creation Phase" duration="5"/>
     <testCase name="Game Flow First Round" duration="2"/>
-    <testCase name="Game Flow Second Round" duration="13">
+    <testCase name="Game Flow Second Round" duration="10">
       <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
 
 - Expected  - 1

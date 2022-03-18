@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                       Refactor code
+-                                                                         Refactor code
 
 # Pomodoro 7
 
@@ -215,6 +215,28 @@ Navigator: Julian
     🚧 And the cell is not empty
     ✅ Then the original mark is kept in the cell
     Then they place their mark in a different cell on the board
+    -   red
+    -   green
+    -   refactor
+-   fix unreliability of `game.test.js`
+-   Look into why Second Round BDD test still failing
+-   Create UAT 1.4 BDD steps
+
+# Pomodoro 13
+
+Driver: Julian
+Navigator: Szilvia
+
+-   🚧 UAT 1.3.4
+    🚧 And the cell is not empty
+    Then the original mark is kept in the cell
+    -   ✅ red
+    -   ✅ green
+    -   refactor
+    -   Create a test for the emptyCell check method in the Board\
+    -   ✅ red
+    -   green
+        Then they place their mark in a different cell on the board
     -   red
     -   green
     -   refactor

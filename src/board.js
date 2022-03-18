@@ -1,12 +1,13 @@
 const ROW_DIVIDER = "-+-+-"
 const CELL_DIVIDER = "|"
+const EMPTY_CELL = " "
 
 class Board {
     constructor() {
         this.board = [
-            [" ", " ", " "],
-            [" ", " ", " "],
-            [" ", " ", " "],
+            [EMPTY_CELL, EMPTY_CELL, EMPTY_CELL],
+            [EMPTY_CELL, EMPTY_CELL, EMPTY_CELL],
+            [EMPTY_CELL, EMPTY_CELL, EMPTY_CELL],
         ]
     }
 
