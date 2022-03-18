@@ -8,7 +8,7 @@ class Player {
         // while(stepPlaced < 1) {
         const row = Math.floor(Math.random() * 3)
         const column = Math.floor(Math.random() * 3)
-        if (board.getCell(row, column) === " ") {
+        if (board.isCellEmpty(row, column)) {
             board.placeMark([row, column], this.mark)
             //      stepPlaced++
         }

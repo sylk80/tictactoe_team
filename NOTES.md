@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                             Refactor code
+-                                                                               Refactor code
 
 # Pomodoro 7
 
@@ -232,13 +232,13 @@ Navigator: Szilvia
     Then the original mark is kept in the cell
     -   ✅ red
     -   ✅ green
-    -   refactor
+    -   ✅ refactor Player
     -   Create a test for the emptyCell check method in the Board\
     -   ✅ red
     -   ✅ modify Board
     -   ✅ green
     -   ✅ refactor test
-        Then they place their mark in a different cell on the board
+    -   Then they place their mark in a different cell on the board
     -   red
     -   green
     -   refactor

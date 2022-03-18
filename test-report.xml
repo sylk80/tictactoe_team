@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/board.test.js">
+    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="2"/>
+    <testCase name="Given a TicTacToe board When the board is initialised Then a board printing method is created" duration="0"/>
+    <testCase name="Given a TicTacToe board When a mark is placed on the board Then the board should contain that mark" duration="1"/>
+    <testCase name="Given a TicTacToe board When a mark is placed on the board Then the board indicates that the cell is not empty" duration="0"/>
+  </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/player.test.js">
     <testCase name="Given a TicTacToe player When the player is initialised Then a new player object is created" duration="2"/>
     <testCase name="Given a TicTacToe player When the player is initialised Then the player&apos;s mark is set" duration="1"/>
@@ -18,11 +24,5 @@
     <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the mark will be added to the board" duration="1"/>
     <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the &quot;Player O:&quot; message is printed" duration="1"/>
     <testCase name="Given the second round of a TicTacToe game When Player O places their mark on the board Then the board with the new mark is printed" duration="0"/>
-  </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/board.test.js">
-    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="2"/>
-    <testCase name="Given a TicTacToe board When the board is initialised Then a board printing method is created" duration="1"/>
-    <testCase name="Given a TicTacToe board When a mark is placed on the board Then the board should contain that mark" duration="1"/>
-    <testCase name="Given a TicTacToe board When a mark is placed on the board Then the board indicates that the cell is not empty" duration="6"/>
   </file>
 </testExecutions>
