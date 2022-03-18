@@ -19,6 +19,10 @@ class Board {
         return this.board[row][column]
     }
 
+    isCellEmpty(row, column) {
+        return this.getCell(row, column) === EMPTY_CELL
+    }
+
     addRowDivider(row, drawnTable) {
         if (row < 2) {
             drawnTable.push(ROW_DIVIDER)
