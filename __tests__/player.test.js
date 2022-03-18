@@ -35,6 +35,7 @@ describe("Given a TicTacToe player", () => {
             player.placeMarkOnTheBoard(board)
             expect(board.board[0][0]).toEqual(player.mark)
         })
+
         describe("And the cell is not empty", () => {
             test("Then the original mark is kept in the cell", () => {
                 const board = new Board()

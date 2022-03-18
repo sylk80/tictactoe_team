@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                     Refactor code
+-                                                                       Refactor code
 
 # Pomodoro 7
 
@@ -211,8 +211,9 @@ Navigator: Balazs
 Driver: Szilvia
 Navigator: Julian
 
--   UAT 1.3.4
-    And the cell is not empty
+-   🚧 UAT 1.3.4
+    🚧 And the cell is not empty
+    ✅ Then the original mark is kept in the cell
     Then they place their mark in a different cell on the board
     -   red
     -   green

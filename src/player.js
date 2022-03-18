@@ -8,11 +8,10 @@ class Player {
         // while(stepPlaced < 1) {
         const row = Math.floor(Math.random() * 3)
         const column = Math.floor(Math.random() * 3)
-        //   if(table[newY][newX] === " ") {
-        // board.board[column][row] = this.mark
-        board.placeMark([row, column], this.mark)
-        //       stepPlaced++
-        //  }
+        if (board.getCell(row, column) === " ") {
+            board.placeMark([row, column], this.mark)
+            //      stepPlaced++
+        }
         // }
         // return board
     }
