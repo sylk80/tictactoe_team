@@ -50,6 +50,10 @@ describe("Given a TicTacToe game", () => {
             expect(initialRound).toContain("Board Created.\n")
         })
 
+        test("Then Player X is the current player", () => {
+            expect(game.currentPlayer.mark).toEqual("X")
+        })
+
         test('Then the "The game will start with player X" message is printed', () => {
             expect(initialRound).toContain(
                 "The game will start with Player X\n"
