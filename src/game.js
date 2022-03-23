@@ -1,6 +1,8 @@
 const Board = require("./board")
 const Player = require("./player")
 
+const isEven = (length) => length % 2 === 0
+
 class Game {
     constructor() {
         this.board = new Board()
@@ -24,7 +26,7 @@ class Game {
     }
 
     getCurrentPlayer() {
-        return this.gameLog.length % 2 === 0 ? this.playerO : this.playerX
+        return isEven(this.gameLog.length) ? this.playerO : this.playerX
     }
 
     play() {
