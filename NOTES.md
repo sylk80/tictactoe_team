@@ -268,7 +268,6 @@ Navigator: Balazs
     - ✅ Create test for the nine steps
     - ✅ Create togglePlayer function from the legacy code
     - ✅ Refactor the game class to use togglePlayer
-    - When game ends, game message is printed
 
 # Pomodoro 17
 
@@ -277,3 +276,4 @@ Navigator: Balazs
 
 -   Fix the togglePlayer function
 -   ✅ Create Unit test for checking the togglePlayer
+-   When game ends, game message is printed
