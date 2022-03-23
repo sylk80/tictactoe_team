@@ -93,6 +93,11 @@ describe("Given a TicTacToe game", () => {
                 const firstRound = game.result()[1]
                 expect(firstRound).toContain(firstRoundBoard)
             })
+
+            test("Then the current player is set to Player O", () => {
+                game.gameLog = game.gameLog.slice(0, 2)
+                expect(game.currentPlayer.mark).toEqual("O")
+            })
         })
     })
 
