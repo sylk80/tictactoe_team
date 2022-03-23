@@ -6,7 +6,6 @@ class Game {
         this.board = new Board()
         this.playerX = new Player("X")
         this.playerO = new Player("O")
-        this.currentPlayer = this.playerX
         this.gameLog = []
     }
 

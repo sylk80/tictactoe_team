@@ -51,7 +51,8 @@ describe("Given a TicTacToe game", () => {
         })
 
         test("Then Player X is the current player", () => {
-            expect(game.currentPlayer.mark).toEqual("X")
+            game.gameLog = game.gameLog.slice(0, 1)
+            expect(game.getCurrentPlayer().mark).toEqual("X")
         })
 
         test('Then the "The game will start with player X" message is printed', () => {
@@ -96,7 +97,7 @@ describe("Given a TicTacToe game", () => {
 
             test("Then the current player is set to Player O", () => {
                 game.gameLog = game.gameLog.slice(0, 2)
-                expect(game.currentPlayer.mark).toEqual("O")
+                expect(game.getCurrentPlayer().mark).toEqual("O")
             })
         })
     })

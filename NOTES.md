@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                   Refactor code
+-                                                                                                     Refactor code
 
 # Pomodoro 7
 
@@ -274,6 +274,13 @@ Navigator: Balazs
 Driver: Julian
 Navigator: Balazs
 
--   🚧 Fix the togglePlayer function
 -   ✅ Create Unit test for checking the togglePlayer
+
+# Pomodoro 18
+
+Driver: Julian
+Navigator: Balazs
+
+-   ✅ Fix the togglePlayer function
+-   ✅ Refactor it to getCurrentPlayer
 -   When game ends, game message is printed
