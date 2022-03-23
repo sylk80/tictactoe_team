@@ -23,44 +23,19 @@ class Game {
         return result
     }
 
+    getCurrentPlayer() {
+        return this.gameLog.length % 2 === 0 ? this.playerO : this.playerX
+    }
+
     play() {
         this.initializerStep()
 
-        this.playerX.placeMarkOnTheBoard(this.board)
-        const firstRound = this.gameStep(this.playerX)
-        this.gameLog.push(firstRound)
-
-        this.playerO.placeMarkOnTheBoard(this.board)
-        const secondRound = this.gameStep(this.playerO)
-        this.gameLog.push(secondRound)
-
-        this.playerX.placeMarkOnTheBoard(this.board)
-        const thirdRound = this.gameStep(this.playerX)
-        this.gameLog.push(thirdRound)
-
-        this.playerO.placeMarkOnTheBoard(this.board)
-        const fourthRound = this.gameStep(this.playerO)
-        this.gameLog.push(fourthRound)
-
-        this.playerX.placeMarkOnTheBoard(this.board)
-        const fifthRound = this.gameStep(this.playerX)
-        this.gameLog.push(fifthRound)
-
-        this.playerO.placeMarkOnTheBoard(this.board)
-        const sixthRound = this.gameStep(this.playerO)
-        this.gameLog.push(sixthRound)
-
-        this.playerX.placeMarkOnTheBoard(this.board)
-        const seventhRound = this.gameStep(this.playerX)
-        this.gameLog.push(seventhRound)
-
-        this.playerO.placeMarkOnTheBoard(this.board)
-        const eighthRound = this.gameStep(this.playerO)
-        this.gameLog.push(eighthRound)
-
-        this.playerX.placeMarkOnTheBoard(this.board)
-        const ninthRound = this.gameStep(this.playerX)
-        this.gameLog.push(ninthRound)
+        while (this.gameLog.length < 10) {
+            const currentPlayer = this.getCurrentPlayer()
+            currentPlayer.placeMarkOnTheBoard(this.board)
+            const round = this.gameStep(currentPlayer)
+            this.gameLog.push(round)
+        }
     }
 
     result() {

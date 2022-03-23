@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                             Refactor code
+-                                                                                               Refactor code
 
 # Pomodoro 7
 
@@ -266,4 +266,14 @@ Driver: Julian
 Navigator: Balazs
 
     - ✅ Create test for the nine steps
+    - ✅ Create togglePlayer function from the legacy code
+    - ✅ Refactor the game class to use togglePlayer
     - When game ends, game message is printed
+
+# Pomodoro 17
+
+Driver: Julian
+Navigator: Balazs
+
+-   Fix the togglePlayer function
+-   Create Unit test for
