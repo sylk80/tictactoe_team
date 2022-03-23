@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                           Refactor code
+-                                                                                             Refactor code
 
 # Pomodoro 7
 
@@ -256,5 +256,14 @@ Navigator: Balazs
 
 -   ✅ fix unreliability of `game.test.js`
 -   ✅ Look into why Second Round BDD test still failing
--   Create UAT 1.4 BDD steps
+-   ✅ Create UAT 1.4 BDD steps
     -   Create test for the nine steps
+    -   When game ends, game message is printed
+
+# Pomodoro 16
+
+Driver: Julian
+Navigator: Balazs
+
+    - ✅ Create test for the nine steps
+    - When game ends, game message is printed

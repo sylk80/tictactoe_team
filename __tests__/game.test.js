@@ -127,4 +127,41 @@ describe("Given a TicTacToe game", () => {
             })
         })
     })
+
+    describe("When it is the last round of the game", () => {
+        test("Then the final round of the game is printed", () => {
+            const game = new Game()
+            // Player X - row 1 column 1
+            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+            // Player O - row 1 column 2
+            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
+            // Player X - row 1 column 3
+            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.8)
+            // Player O - row 2 column 1
+            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
+            // Player X - row 2 column 3
+            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.8)
+            // Player O - row 2 column 2
+            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+            // Player X - row 3 column 1
+            mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
+            // Player O - row 3 column 3
+            mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.8)
+            // Player X - row 3 column 2
+            mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.4)
+
+            game.play()
+            const lastRoundBoard = [
+                "X|O|X",
+                "-+-+-",
+                "O|O|X",
+                "-+-+-",
+                "X|X|O",
+                "\n",
+            ].join("\n")
+
+            const lastRound = game.result()[9]
+            expect(lastRound).toContain(lastRoundBoard)
+        })
+    })
 })
