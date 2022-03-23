@@ -16,3 +16,8 @@ Scenario: Second Round
   Given the second round of a TicTacToe game
   When Player O places their mark on the board
   Then the second round of the game is printed
+
+Scenario: Last Rond
+  Given the ninth round of a TicTacToe game
+  When the last Player places their mark on the board
+  Then the last round of the game is printed
