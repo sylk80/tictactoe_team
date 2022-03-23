@@ -33,6 +33,34 @@ class Game {
         this.playerO.placeMarkOnTheBoard(this.board)
         const secondRound = this.gameStep(this.playerO)
         this.gameLog.push(secondRound)
+
+        this.playerX.placeMarkOnTheBoard(this.board)
+        const thirdRound = this.gameStep(this.playerX)
+        this.gameLog.push(thirdRound)
+
+        this.playerO.placeMarkOnTheBoard(this.board)
+        const fourthRound = this.gameStep(this.playerO)
+        this.gameLog.push(fourthRound)
+
+        this.playerX.placeMarkOnTheBoard(this.board)
+        const fifthRound = this.gameStep(this.playerX)
+        this.gameLog.push(fifthRound)
+
+        this.playerO.placeMarkOnTheBoard(this.board)
+        const sixthRound = this.gameStep(this.playerO)
+        this.gameLog.push(sixthRound)
+
+        this.playerX.placeMarkOnTheBoard(this.board)
+        const seventhRound = this.gameStep(this.playerX)
+        this.gameLog.push(seventhRound)
+
+        this.playerO.placeMarkOnTheBoard(this.board)
+        const eighthRound = this.gameStep(this.playerO)
+        this.gameLog.push(eighthRound)
+
+        this.playerX.placeMarkOnTheBoard(this.board)
+        const ninthRound = this.gameStep(this.playerX)
+        this.gameLog.push(ninthRound)
     }
 
     result() {
