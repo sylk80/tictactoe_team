@@ -57,9 +57,10 @@ class Board {
             .map((row) => row[middleColumnNumber])
             .join("")
 
+        const winCondition = mark.repeat(3)
         return (
-            leftColumnValues === mark.repeat(3) ||
-            middleColumnValues === mark.repeat(3)
+            leftColumnValues === winCondition ||
+            middleColumnValues === winCondition
         )
     }
 }
