@@ -45,5 +45,16 @@ describe("Given a TicTacToe board", () => {
                 expect(board.checkForColumnWin(mark)).toEqual(true)
             })
         })
+
+        describe("And there are three of the same mark in the middle column", () => {
+            test("Then the board returns true", () => {
+                const mark = "X"
+                board.placeMark([0, 1], mark)
+                board.placeMark([1, 1], mark)
+                board.placeMark([2, 1], mark)
+
+                expect(board.checkForColumnWin(mark)).toEqual(true)
+            })
+        })
     })
 })
