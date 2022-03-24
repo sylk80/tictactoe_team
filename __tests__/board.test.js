@@ -36,13 +36,13 @@ describe("Given a TicTacToe board", () => {
 
     describe("When the board checks for a winning condition", () => {
         describe("And there are three of the same mark in the left column", () => {
-            test("Then the board returns the winning player's mark", () => {
+            test("Then the board returns true", () => {
                 const mark = "X"
                 board.placeMark([0, 0], mark)
                 board.placeMark([1, 0], mark)
                 board.placeMark([2, 0], mark)
 
-                expect(board.checkForColumnWin()).toEqual(mark)
+                expect(board.checkForColumnWin(mark)).toEqual(true)
             })
         })
     })

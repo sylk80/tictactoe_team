@@ -45,17 +45,13 @@ class Board {
         return drawnTable.join("\n")
     }
 
-    checkForColumnWin(columnNumber) {
-        let winner = null
-        if (
-            this.board[0][columnNumber] === this.board[1][columnNumber] &&
-            this.board[0][columnNumber] === this.board[2][columnNumber] &&
-            this.board[1][columnNumber] === this.board[2][columnNumber] &&
-            this.board[0][columnNumber] !== " "
-        ) {
-            winner = this.board[0][columnNumber]
-        }
-        return winner
+    checkForColumnWin(mark) {
+        const columnNumber = 0
+        const leftColumnValues = this.board
+            .map((row) => row[columnNumber])
+            .join("")
+
+        return leftColumnValues === mark.repeat(3)
     }
 }
 
