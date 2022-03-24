@@ -45,30 +45,12 @@ class Board {
         return drawnTable.join("\n")
     }
 
-    checkForColumnWin(mark) {
-        const leftColumnNumber = 0
-        const middleColumnNumber = 1
-        const rightColumnNumber = 2
-
-        const leftColumnValues = this.board
-            .map((row) => row[leftColumnNumber])
-            .join("")
-
-        const middleColumnValues = this.board
-            .map((row) => row[middleColumnNumber])
-            .join("")
-
-        const rightColumnValues = this.board
-            .map((row) => row[rightColumnNumber])
-            .join("")
+    checkForColumnWin(mark, column) {
+        const columnValues = this.board.map((row) => row[column]).join("")
 
         const winCondition = mark.repeat(3)
 
-        return (
-            leftColumnValues === winCondition ||
-            middleColumnValues === winCondition ||
-            rightColumnValues === winCondition
-        )
+        return columnValues === winCondition
     }
 }
 

@@ -35,37 +35,24 @@ describe("Given a TicTacToe board", () => {
     })
 
     describe("When the board checks for a winning condition", () => {
-        describe("And there are three of the same mark in the left column", () => {
-            test("Then the board indicates that mark has won", () => {
-                const mark = "X"
-                board.placeMark([0, 0], mark)
-                board.placeMark([1, 0], mark)
-                board.placeMark([2, 0], mark)
+        describe.each([
+            ["left", 0],
+            ["middle", 1],
+            ["right", 2],
+        ])(
+            "And there are three of the same mark in the %s column",
+            (column, columnNumber) => {
+                test("Then the board indicates that mark has won", () => {
+                    const mark = "X"
+                    board.placeMark([0, columnNumber], mark)
+                    board.placeMark([1, columnNumber], mark)
+                    board.placeMark([2, columnNumber], mark)
 
-                expect(board.checkForColumnWin(mark)).toEqual(true)
-            })
-        })
-
-        describe("And there are three of the same mark in the middle column", () => {
-            test("Then the board indicates that mark has won", () => {
-                const mark = "X"
-                board.placeMark([0, 1], mark)
-                board.placeMark([1, 1], mark)
-                board.placeMark([2, 1], mark)
-
-                expect(board.checkForColumnWin(mark)).toEqual(true)
-            })
-        })
-
-        describe("And there are three of the same mark in the right column", () => {
-            test("Then the board indicates that mark has won", () => {
-                const mark = "X"
-                board.placeMark([0, 2], mark)
-                board.placeMark([1, 2], mark)
-                board.placeMark([2, 2], mark)
-
-                expect(board.checkForColumnWin(mark)).toEqual(true)
-            })
-        })
+                    expect(board.checkForColumnWin(mark, columnNumber)).toEqual(
+                        true
+                    )
+                })
+            }
+        )
     })
 })
