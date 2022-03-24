@@ -73,7 +73,7 @@ When("Player O places their mark on the board", () => {
 
 Then("the second round of the game is printed", () => {
     const secondRound = [
-        "Player X:",
+        "Player O:",
         "X| | ",
         "-+-+-",
         " |O| ",
