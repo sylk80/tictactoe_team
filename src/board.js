@@ -44,6 +44,19 @@ class Board {
         drawnTable.push("\n")
         return drawnTable.join("\n")
     }
+
+    checkForColumnWin(columnNumber) {
+        let winner = null
+        if (
+            this.board[0][columnNumber] === this.board[1][columnNumber] &&
+            this.board[0][columnNumber] === this.board[2][columnNumber] &&
+            this.board[1][columnNumber] === this.board[2][columnNumber] &&
+            this.board[0][columnNumber] !== " "
+        ) {
+            winner = this.board[0][columnNumber]
+        }
+        return winner
+    }
 }
 
 module.exports = Board
