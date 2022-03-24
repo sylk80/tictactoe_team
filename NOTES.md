@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                       Refactor code
+-                                                                                                         Refactor code
 
 # Pomodoro 7
 
@@ -283,4 +283,7 @@ Navigator: Balazs
 
 -   ✅ Fix the togglePlayer function
 -   ✅ Rename togglePlayer and refactor as getCurrentPlayer
--   When game ends, game message is printed
+-   🚧 Unit test: When game ends, game message is printed
+
+-   ✅ Feature file for winning conditions scenario
+-   Unit test to check vertical winning condition
