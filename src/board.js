@@ -46,12 +46,21 @@ class Board {
     }
 
     checkForColumnWin(mark) {
-        const columnNumber = 0
+        const leftColumnNumber = 0
+        const middleColumnNumber = 1
+
         const leftColumnValues = this.board
-            .map((row) => row[columnNumber])
+            .map((row) => row[leftColumnNumber])
             .join("")
 
-        return leftColumnValues === mark.repeat(3)
+        const middleColumnValues = this.board
+            .map((row) => row[middleColumnNumber])
+            .join("")
+
+        return (
+            leftColumnValues === mark.repeat(3) ||
+            middleColumnValues === mark.repeat(3)
+        )
     }
 }
 

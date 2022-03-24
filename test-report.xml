@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
-    <testCase name="Game Flow Game Board Creation Phase" duration="6"/>
+    <testCase name="Game Flow Game Board Creation Phase" duration="7"/>
     <testCase name="Game Flow First Round" duration="1"/>
     <testCase name="Game Flow Second Round" duration="1"/>
     <testCase name="Game Flow Last Rond" duration="1"/>
@@ -23,34 +23,34 @@
 +   "Player O:
 + X|O| 
 + -+-+-
-+ X|O|O
++ X|O| 
 + -+-+-
-+ X| | 
++ X| |O
 +
 + ",
 +   "Player X:
++ X|O|X
++ -+-+-
 + X|O| 
 + -+-+-
-+ X|O|O
-+ -+-+-
-+ X|X| 
++ X| |O
 +
 + ",
 +   "Player O:
++ X|O|X
++ -+-+-
 + X|O| 
 + -+-+-
 + X|O|O
-+ -+-+-
-+ X|X|O
 +
   ",
 -   "PLAYER X WON!",
 +   "Player X:
 + X|O|X
 + -+-+-
-+ X|O|O
++ X|O|X
 + -+-+-
-+ X|X|O
++ X|O|O
 +
 + ",
   ]
