@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                           Refactor code
+-                                                                                                             Refactor code
 
 # Pomodoro 7
 
@@ -290,7 +290,11 @@ Navigator: Balazs
 
 # Pomodoro 19
 
-Driver: Szilvia
+Driver: Julian
+Navigator: Szilvia
 
--   Solve Second Round BDD Test failű
--   Create UAT 1.4 BDD steps
+-   Unit test 2.1.1 creation
+-   ✅ Check legacy code for usability
+-   ✅ Create test in for board to use the vertical mark matching
+-   ✅ Run uni test red phase
+-   Port CheckForColumnWin to board.js
