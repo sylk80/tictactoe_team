@@ -48,6 +48,7 @@ class Board {
     checkForColumnWin(mark) {
         const leftColumnNumber = 0
         const middleColumnNumber = 1
+        const rightColumnNumber = 2
 
         const leftColumnValues = this.board
             .map((row) => row[leftColumnNumber])
@@ -57,10 +58,16 @@ class Board {
             .map((row) => row[middleColumnNumber])
             .join("")
 
+        const rightColumnValues = this.board
+            .map((row) => row[rightColumnNumber])
+            .join("")
+
         const winCondition = mark.repeat(3)
+
         return (
             leftColumnValues === winCondition ||
-            middleColumnValues === winCondition
+            middleColumnValues === winCondition ||
+            rightColumnValues === winCondition
         )
     }
 }
