@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                 Refactor code
+-                                                                                                                   Refactor code
 
 # Pomodoro 7
 
@@ -304,5 +304,12 @@ Navigator: Szilvia
 Driver: Julian
 
 -   ✅ hardcode CheckForColumnWin() to check left column
--   add unit test for checking middle column for win
--   add unit test for checking right column for win
+-   ✅ add unit test for checking middle column for win
+-   ✅ add unit test for checking right column for win
+
+# Pomodoro 21
+
+Driver: Szilvia
+Navigator: Balázs
+
+-   Create test for the vertical winning condition message.

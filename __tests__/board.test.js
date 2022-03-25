@@ -52,6 +52,15 @@ describe("Given a TicTacToe board", () => {
                         true
                     )
                 })
+
+                test("Then the board vertical win-check returns the mark that has won", () => {
+                    const mark = "X"
+                    board.placeMark([0, columnNumber], mark)
+                    board.placeMark([1, columnNumber], mark)
+                    board.placeMark([2, columnNumber], mark)
+
+                    expect(board.checkForVerticalWin()).toEqual(mark)
+                })
             }
         )
     })
