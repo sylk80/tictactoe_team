@@ -52,6 +52,17 @@ class Board {
 
         return columnValues === winCondition
     }
+
+    checkForVerticalWin(mark) {
+        let markHasWon = false
+        for (let column = 0; column < 3; column++) {
+            markHasWon = this.checkForColumnWin(mark, column)
+            if (markHasWon) {
+                break
+            }
+        }
+        return markHasWon
+    }
 }
 
 module.exports = Board
