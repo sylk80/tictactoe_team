@@ -143,9 +143,9 @@ describe("Given a TicTacToe game", () => {
             const game = new Game()
             // Player X - row 1 column 1
             mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-            // Player O - row 1 column 2
+            // Player O - row 1 column 2🚧
             mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
-            // Player X - row 1 column 3
+            // Player X - row 1 column 3🚧
             mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.8)
             // Player O - row 2 column 1
             mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
@@ -172,6 +172,31 @@ describe("Given a TicTacToe game", () => {
 
             const lastRound = game.result()[9]
             expect(lastRound).toContain(lastRoundBoard)
+        })
+    })
+
+    describe("When Player X has placed their mark", () => {
+        describe("and the X marks fulfil a vertical winning condition", () => {
+            test("Then the game is checking the board for a win", () => {
+                const game = new Game()
+
+                // Player X - row 1 column 1
+                mathRandomSpy
+                    .mockReturnValueOnce(0.02)
+                    .mockReturnValueOnce(0.02)
+                // Player O - row 1 column 2
+                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
+                // Player X - row 2 column 1
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
+                // Player O - row 2 column 2
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+                // Player X - row 3 column 1
+                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
+
+                game.play()
+
+                expect(game.checkBoardForWin(game.playerX)).toEqual(true)
+            })
         })
     })
 })

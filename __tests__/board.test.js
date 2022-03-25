@@ -59,7 +59,7 @@ describe("Given a TicTacToe board", () => {
                     board.placeMark([1, columnNumber], mark)
                     board.placeMark([2, columnNumber], mark)
 
-                    expect(board.checkForVerticalWin()).toEqual(mark)
+                    expect(board.checkForVerticalWin(mark)).toEqual(true)
                 })
             }
         )

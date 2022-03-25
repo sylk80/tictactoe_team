@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                     Refactor code
+-                                                                                                                       Refactor code
 
 # Pomodoro 7
 
@@ -296,7 +296,7 @@ Navigator: Szilvia
 -   Unit test 2.1.1 creation
 -   ✅ Check legacy code for usability
 -   ✅ Create test in for board to use the vertical mark matching
--   ✅ Run unit test red phase
+-   ✅ Run unit test🚧 red phase
 -   ✅ Port CheckForColumnWin to board.js
 
 # Pomodoro 20
@@ -314,3 +314,5 @@ Navigator: Balázs
 
 -   Create test for the vertical winning condition message.
 -   ✅ Add the checkForVerticalWin function to the board.js
+-   🚧 Refactor the checkForVerticalWin function
+-   Checking the winning condition in the game.js

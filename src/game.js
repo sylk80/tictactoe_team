@@ -19,6 +19,10 @@ class Game {
         this.gameLog.push(setupMessage)
     }
 
+    checkBoardForWin(player) {
+        return this.board.checkForVerticalWin(player.mark)
+    }
+
     gameStep(player) {
         let result = `Player ${player.mark}:\n`
         result += this.board.print()
