@@ -233,7 +233,7 @@ describe("Given a TicTacToe game", () => {
 
                 game.play()
 
-                expect(game.result().length).toEqual(5)
+                expect(game.result().length).toEqual(6)
             })
         })
     })

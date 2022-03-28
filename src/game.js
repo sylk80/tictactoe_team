@@ -1,3 +1,4 @@
+const { times } = require("lodash")
 const Board = require("./board")
 const Player = require("./player")
 
@@ -44,6 +45,9 @@ class Game {
             currentPlayer.placeMarkOnTheBoard(this.board)
             const round = this.gameStep(currentPlayer)
             this.gameLog.push(round)
+            if (this.checkBoardForWin(currentPlayer)) {
+                break
+            }
         }
     }
 
