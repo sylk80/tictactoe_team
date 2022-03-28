@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                             Refactor code
+-                                                                                                                               Refactor code
 
 # Pomodoro 7
 
@@ -324,4 +324,4 @@ Navigator: Balázs
 
 -   ✅ Unit test: Player X won message is printed.
 -   ✅ Refactor the game.test.js
--   Check wether the game ends
+-   ✅ Check wether the game ends
