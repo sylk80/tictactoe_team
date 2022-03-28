@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                       Refactor code
+-                                                                                                                         Refactor code
 
 # Pomodoro 7
 
@@ -286,7 +286,7 @@ Navigator: Balazs
 -   🚧 Unit test: When game ends, game message is printed
 
 -   ✅ Feature file for winning conditions scenario
--   Unit test to check vertical winning condition
+-   ✅ Unit test to check vertical winning condition
 
 # Pomodoro 19
 
@@ -315,4 +315,12 @@ Navigator: Balázs
 -   Create test for the vertical winning condition message.
 -   ✅ Add the checkForVerticalWin function to the board.js
 -   🚧 Refactor the checkForVerticalWin function
--   Checking the winning condition in the game.js
+-   ✅ Checking the winning condition in the game.js
+
+# Pomodoro 22
+
+Driver: Szilvia
+Navigator: Balázs
+
+-   🚧 Unit test: Player X won message is printed.
+-   Check wether the game ends
