@@ -197,6 +197,28 @@ describe("Given a TicTacToe game", () => {
 
                 expect(game.checkBoardForWin(game.playerX)).toEqual(true)
             })
+
+            test("Then the PLAYER X WON! message is printed", () => {
+                const game = new Game()
+
+                // Player X - row 1 column 1
+                mathRandomSpy
+                    .mockReturnValueOnce(0.02)
+                    .mockReturnValueOnce(0.02)
+                // Player O - row 1 column 2
+                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
+                // Player X - row 2 column 1
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
+                // Player O - row 2 column 2
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+                // Player X - row 3 column 1
+                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
+
+                game.play()
+
+                const winningRound = game.result()[5]
+                expect(winningRound).toContain("PLAYER X WON!")
+            })
         })
     })
 })

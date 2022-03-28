@@ -26,6 +26,9 @@ class Game {
     gameStep(player) {
         let result = `Player ${player.mark}:\n`
         result += this.board.print()
+        if (this.checkBoardForWin(player)) {
+            result += `PLAYER ${player.mark} WON!`
+        }
         return result
     }
 
