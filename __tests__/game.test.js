@@ -207,5 +207,34 @@ describe("Given a TicTacToe game", () => {
                 expect(winningRound).toContain("PLAYER X WON!")
             })
         })
+        describe("and Player X is announced as winner", () => {
+            test("Then the game ends", () => {
+                const game = new Game()
+                // Player X - row 1 column 1
+                mathRandomSpy
+                    .mockReturnValueOnce(0.02)
+                    .mockReturnValueOnce(0.02)
+                // Player O - row 1 column 2
+                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
+                // Player X - row 2 column 1
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
+                // Player O - row 2 column 2
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+                // Player X - row 3 column 1
+                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
+                // Player O - row 3 column 2 - should not happen
+                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.4)
+                // Player X - row 1 column 3 - should not happen
+                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.8)
+                // Player O - row 2 column 2
+                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+                // Player X - row 3 column 3
+                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.8)
+
+                game.play()
+
+                expect(game.result().length).toEqual(5)
+            })
+        })
     })
 })
