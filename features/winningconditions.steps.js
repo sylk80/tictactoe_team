@@ -93,9 +93,7 @@ Then("the game ends and the results are printed", () => {
           "-+-+-",
           "X| | ",
           "\n"
-        ].join("\n"),
-        "\n",
-        "PLAYER X WON!"
+        ].join("\n").concat(["PLAYER X WON!"])
     ]
 
     expect(game.result()).toEqual(gameResults)
