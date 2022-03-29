@@ -9,6 +9,20 @@ const {
 } = require("jest-cucumber-fusion")
 const Game = require("../src/game")
 
+const {
+    mockPlayerMove,
+    POSITIONS,
+} = require("../__tests__/utils/playermove.mock")
+
+const {
+    FIRST_ROW,
+    SECOND_ROW,
+    FIRST_COLUMN,
+    SECOND_COLUMN,
+    THIRD_ROW,
+    THIRD_COLUMN,
+} = POSITIONS
+
 let mathRandomSpy
 
 let game
@@ -44,7 +58,7 @@ Given("the first round of a TicTacToe game", () => {
 })
 
 When("Player X places their mark on the board", () => {
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
     game.play()
 })
 
@@ -66,8 +80,8 @@ Given("the second round of a TicTacToe game", () => {
 })
 
 When("Player O places their mark on the board", () => {
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+    mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
     game.play()
 })
 
@@ -89,24 +103,24 @@ Given("the ninth round of a TicTacToe game", () => {
 })
 
 When("the last Player places their mark on the board", () => {
-    // Player X - row 1 column 1
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-    // Player O - row 1 column 2
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
-    // Player X - row 1 column 3
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.8)
-    // Player O - row 2 column 1
-    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
-    // Player X - row 2 column 3
-    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.8)
-    // Player O - row 2 column 2
-    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-    // Player X - row 3 column 1
-    mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
-    // Player O - row 3 column 3
-    mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.8)
-    // Player X - row 3 column 2
-    mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.4)
+    // Player X
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+    // Player O
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, SECOND_COLUMN])
+    // Player X
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, THIRD_COLUMN])
+    // Player O
+    mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
+    // Player X
+    mockPlayerMove(mathRandomSpy, [SECOND_ROW, THIRD_COLUMN])
+    // Player O
+    mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+    // Player X
+    mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
+    // Player O
+    mockPlayerMove(mathRandomSpy, [THIRD_ROW, THIRD_COLUMN])
+    // Player X
+    mockPlayerMove(mathRandomSpy, [THIRD_ROW, SECOND_COLUMN])
 
     game.play()
 })

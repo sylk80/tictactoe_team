@@ -9,6 +9,14 @@ const {
 } = require("jest-cucumber-fusion")
 const Game = require("../src/game")
 
+const {
+    mockPlayerMove,
+    POSITIONS,
+} = require("../__tests__/utils/playermove.mock")
+
+const { FIRST_ROW, SECOND_ROW, FIRST_COLUMN, SECOND_COLUMN, THIRD_ROW } =
+    POSITIONS
+
 let mathRandomSpy
 
 let game
@@ -22,16 +30,16 @@ Given("Player X has placed their mark", () => {
 })
 
 When("the X marks fulfil a vertical winning condition", () => {
-    // Player X - row 1 column 1
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-    // Player O - row 1 column 2
-    mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
-    // Player X - row 2 column 1
-    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
-    // Player O - row 2 column 2
-    mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-    // Player X - row 3 column 1
-    mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
+    // Player X
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+    // Player O
+    mockPlayerMove(mathRandomSpy, [FIRST_ROW, SECOND_COLUMN])
+    // Player X
+    mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
+    // Player O
+    mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+    // Player X
+    mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
 
     game.play()
 })
