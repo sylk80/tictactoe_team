@@ -1,7 +1,14 @@
 const Game = require("../src/game")
 const { mockPlayerMove, POSITIONS } = require("./utils/playermove.mock")
 
-const { FIRST_ROW, SECOND_ROW, FIRST_COLUMN, SECOND_COLUMN } = POSITIONS
+const {
+    FIRST_ROW,
+    SECOND_ROW,
+    FIRST_COLUMN,
+    SECOND_COLUMN,
+    THIRD_ROW,
+    THIRD_COLUMN,
+} = POSITIONS
 
 describe("Given a TicTacToe game", () => {
     let mathRandomSpy
@@ -141,24 +148,24 @@ describe("Given a TicTacToe game", () => {
     describe("When it is the last round of the game", () => {
         test("Then the final round of the game is printed", () => {
             const game = new Game()
-            // Player X - row 1 column 1
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.02)
-            // Player O - row 1 column 2🚧
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
-            // Player X - row 1 column 3🚧
-            mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.8)
-            // Player O - row 2 column 1
-            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
-            // Player X - row 2 column 3
-            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.8)
-            // Player O - row 2 column 2
-            mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-            // Player X - row 3 column 1
-            mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
-            // Player O - row 3 column 3
-            mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.8)
-            // Player X - row 3 column 2
-            mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.4)
+            // Player X
+            mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+            // Player O
+            mockPlayerMove(mathRandomSpy, [FIRST_ROW, SECOND_COLUMN])
+            // Player X
+            mockPlayerMove(mathRandomSpy, [FIRST_ROW, THIRD_COLUMN])
+            // Player O
+            mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
+            // Player X
+            mockPlayerMove(mathRandomSpy, [SECOND_ROW, THIRD_COLUMN])
+            // Player O
+            mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+            // Player X
+            mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
+            // Player O
+            mockPlayerMove(mathRandomSpy, [THIRD_ROW, THIRD_COLUMN])
+            // Player X
+            mockPlayerMove(mathRandomSpy, [THIRD_ROW, SECOND_COLUMN])
 
             game.play()
             const lastRoundBoard = [
@@ -182,18 +189,16 @@ describe("Given a TicTacToe game", () => {
             beforeEach(() => {
                 game = new Game()
 
-                // Player X - row 1 column 1
-                mathRandomSpy
-                    .mockReturnValueOnce(0.02)
-                    .mockReturnValueOnce(0.02)
-                // Player O - row 1 column 2
-                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
-                // Player X - row 2 column 1
-                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
-                // Player O - row 2 column 2
-                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-                // Player X - row 3 column 1
-                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
+                // Player X
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, SECOND_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
 
                 game.play()
             })
@@ -210,26 +215,24 @@ describe("Given a TicTacToe game", () => {
         describe("and Player X is announced as winner", () => {
             test("Then the game ends", () => {
                 const game = new Game()
-                // Player X - row 1 column 1
-                mathRandomSpy
-                    .mockReturnValueOnce(0.02)
-                    .mockReturnValueOnce(0.02)
-                // Player O - row 1 column 2
-                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.4)
-                // Player X - row 2 column 1
-                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.02)
-                // Player O - row 2 column 2
-                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-                // Player X - row 3 column 1
-                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.02)
-                // Player O - row 3 column 2 - should not happen
-                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.4)
-                // Player X - row 1 column 3 - should not happen
-                mathRandomSpy.mockReturnValueOnce(0.02).mockReturnValueOnce(0.8)
-                // Player O - row 2 column 2
-                mathRandomSpy.mockReturnValueOnce(0.4).mockReturnValueOnce(0.4)
-                // Player X - row 3 column 3
-                mathRandomSpy.mockReturnValueOnce(0.8).mockReturnValueOnce(0.8)
+                // Player X
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, SECOND_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
+                // Player O - should not happen
+                mockPlayerMove(mathRandomSpy, [THIRD_ROW, SECOND_COLUMN])
+                // Player X - should not happen
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, THIRD_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [THIRD_ROW, THIRD_COLUMN])
 
                 game.play()
 
