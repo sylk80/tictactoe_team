@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                                       Refactor code
+-                                                                                                                                         Refactor code
 
 # Pomodoro 7
 
@@ -338,3 +338,9 @@ Navigator: Szilvia
 -   ✅ Refactor the gamestep - to check for win once
 -   Create win condition check method?
 -   UAT 2.2 - horizontal winning condition
+
+# Pomodoro 24
+
+-   CI/CD:
+    -   add `build-and-publish.sh` script and add it to Travis
+    -   add and complete `initialise-environment.sh`

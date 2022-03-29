@@ -6,6 +6,7 @@
     "scripts": {
         "lint": "eslint \"./**/*.js\"",
         "start": "npx run-func src/tictactoekata.js tictactoekata",
+        "test": "npm run test:unit && npm run test:bdd",
         "test:unit": "jest ./__tests__ --verbose",
         "test:unit:watch": "npm run test:unit -- --watchAll",
         "test:bdd": "jest ./features --verbose",
