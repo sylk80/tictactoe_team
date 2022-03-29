@@ -204,7 +204,8 @@ describe("Given a TicTacToe game", () => {
             })
 
             test("Then the game is checking the board for a win", () => {
-                expect(game.checkBoardForWin(game.playerX)).toEqual(true)
+                game.checkBoardForWin(game.playerX)
+                expect(game.winner).toEqual(game.playerX)
             })
 
             test("Then the PLAYER X WON! message is printed", () => {

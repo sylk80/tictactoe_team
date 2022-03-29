@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                                     Refactor code
+-                                                                                                                                       Refactor code
 
 # Pomodoro 7
 
@@ -335,6 +335,6 @@ Navigator: Szilvia
 -   ✅ Refactor mocking random numbers in the test
 -   ✅ Refactor winningconditions.step to use mocking utility
 -   ✅ Refactor gameflow.step to use mocking utility
--   Refactor the game step - to check for win once
+-   ✅ Refactor the gamestep - to check for win once
 -   Create win condition check method?
 -   UAT 2.2 - horizontal winning condition

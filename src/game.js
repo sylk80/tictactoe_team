@@ -10,6 +10,7 @@ class Game {
         this.playerX = new Player("X")
         this.playerO = new Player("O")
         this.gameLog = []
+        this.winner
     }
 
     initializerStep() {
@@ -21,16 +22,20 @@ class Game {
     }
 
     checkBoardForWin(player) {
-        return this.board.checkForVerticalWin(player.mark)
+        const winner = this.board.checkForVerticalWin(player.mark)
+        if (winner) {
+            this.gameLog[
+                this.gameLog.length - 1
+            ] += `PLAYER ${player.mark} WON!`
+            this.winner = player
+        }
     }
 
     gameStep(player) {
+        player.placeMarkOnTheBoard(this.board)
         let result = `Player ${player.mark}:\n`
         result += this.board.print()
-        if (this.checkBoardForWin(player)) {
-            result += `PLAYER ${player.mark} WON!`
-        }
-        return result
+        this.gameLog.push(result)
     }
 
     getCurrentPlayer() {
@@ -40,14 +45,10 @@ class Game {
     play() {
         this.initializerStep()
 
-        while (this.gameLog.length < 10) {
+        while (this.gameLog.length < 10 && this.winner == null) {
             const currentPlayer = this.getCurrentPlayer()
-            currentPlayer.placeMarkOnTheBoard(this.board)
-            const round = this.gameStep(currentPlayer)
-            this.gameLog.push(round)
-            if (this.checkBoardForWin(currentPlayer)) {
-                break
-            }
+            this.gameStep(currentPlayer)
+            this.checkBoardForWin(currentPlayer)
         }
     }
 
