@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/board.test.js">
-    <testCase name="Given a TicTacToe board When the board is initialised Then a new board object is created" duration="3"/>
-    <testCase name="Given a TicTacToe board When the board is initialised Then a board printing method is created" duration="2"/>
-    <testCase name="Given a TicTacToe board When a mark is placed on the board Then the board should contain that mark" duration="2"/>
-    <testCase name="Given a TicTacToe board When a mark is placed on the board Then the board indicates that the cell is not empty" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the left column Then the board indicates that mark has won" duration="1"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the left column Then the board vertical win-check returns the mark that has won" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the middle column Then the board indicates that mark has won" duration="1"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the middle column Then the board vertical win-check returns the mark that has won" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the right column Then the board indicates that mark has won" duration="2"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the right column Then the board vertical win-check returns the mark that has won" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the top row Then the board indicates that mark has won" duration="1"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the top row Then the board horizontal win-check confirms whether the mark has won" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the middle row Then the board indicates that mark has won" duration="1"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the middle row Then the board horizontal win-check confirms whether the mark has won" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the bottom row Then the board indicates that mark has won" duration="0"/>
-    <testCase name="Given a TicTacToe board When the board checks for a winning condition And there are three of the same mark in the bottom row Then the board horizontal win-check confirms whether the mark has won" duration="0"/>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/verticalWinningCondition.steps.js">
+    <testCase name="Vertical Winning Condition Vertical winning condition" duration="5"/>
   </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/player.test.js">
-    <testCase name="Given a TicTacToe player When the player is initialised Then a new player object is created" duration="11"/>
-    <testCase name="Given a TicTacToe player When the player is initialised Then the player&apos;s mark is set" duration="3"/>
-    <testCase name="Given a TicTacToe player When the player is taking their turn Then a mark is placed on the board" duration="1"/>
-    <testCase name="Given a TicTacToe player When the player is taking their turn And the cell is not empty Then the original mark is kept in the cell" duration="1"/>
-    <testCase name="Given a TicTacToe player When the player is taking their turn And the cell is not empty Then they place their mark in a different cell on the board" duration="0"/>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
+    <testCase name="Game Flow Game Board Creation Phase" duration="6"/>
+    <testCase name="Game Flow First Round" duration="2"/>
+    <testCase name="Game Flow Second Round" duration="1"/>
+    <testCase name="Game Flow Last Round" duration="1"/>
   </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/__tests__/game.test.js">
-    <testCase name="Given a TicTacToe game When a new game starts Then a new board is created" duration="4"/>
-    <testCase name="Given a TicTacToe game When a new game starts Then the &quot;Game Board Creation...&quot; message is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When a new game starts Then the empty board is printed" duration="0"/>
-    <testCase name="Given a TicTacToe game When a new game starts Then the &quot;Board Created.&quot; message is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When a new game starts Then Player X is the current player" duration="2"/>
-    <testCase name="Given a TicTacToe game When a new game starts Then the &quot;The game will start with player X&quot; message is printed" duration="2"/>
-    <testCase name="Given a TicTacToe game When it is the first round of the game And Player X places their mark on the board Then the mark will be added to the board" duration="1"/>
-    <testCase name="Given a TicTacToe game When it is the first round of the game And Player X places their mark on the board Then the &quot;Player X:&quot; message is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When it is the first round of the game And Player X places their mark on the board Then the board with the new mark is printed" duration="10"/>
-    <testCase name="Given a TicTacToe game When it is the first round of the game And Player X places their mark on the board Then the current player is set to Player O" duration="1"/>
-    <testCase name="Given a TicTacToe game When it is the second round of the game And Player O places their mark on the board Then the mark will be added to the board" duration="1"/>
-    <testCase name="Given a TicTacToe game When it is the second round of the game And Player O places their mark on the board Then the &quot;Player O:&quot; message is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When it is the second round of the game And Player O places their mark on the board Then the board with the new mark is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When it is the last round of the game Then the final round of the game is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When Player X has placed their mark and the X marks fulfil a vertical winning condition Then the game is checking the board for a win" duration="1"/>
-    <testCase name="Given a TicTacToe game When Player X has placed their mark and the X marks fulfil a vertical winning condition Then the PLAYER X WON! message is printed" duration="0"/>
-    <testCase name="Given a TicTacToe game When Player X has placed their mark and Player X is announced as winner Then the game ends" duration="1"/>
-    <testCase name="Given a TicTacToe game When Player O has placed their mark And the O marks fulfil a horizontal winning condition Then the &quot;PLAYER O WON!&quot; message is printed" duration="1"/>
-    <testCase name="Given a TicTacToe game When Player O has placed their mark And the O marks fulfil a horizontal winning condition And Player O is announced as the winner Then the game ends" duration="0"/>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/horizontalWinningCondition.steps.js">
+    <testCase name="Horizontal Winning Condition Horizontal winning condition" duration="6"/>
   </file>
 </testExecutions>

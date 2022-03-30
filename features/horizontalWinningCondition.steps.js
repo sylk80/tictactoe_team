@@ -31,88 +31,6 @@ Before(() => {
     mathRandomSpy = jest.spyOn(global.Math, "random")
 })
 
-Given("Player X has placed their mark", () => {
-    game = new Game()
-})
-
-When("the X marks fulfil a vertical winning condition", () => {
-    // Player X
-    mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
-    // Player O
-    mockPlayerMove(mathRandomSpy, [FIRST_ROW, SECOND_COLUMN])
-    // Player X
-    mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
-    // Player O
-    mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
-    // Player X
-    mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
-
-    game.play()
-})
-
-Then("the game ends and the results are printed", () => {
-    // prettier-ignore
-    const gameResults = [
-        [
-          "Game Board Creation...",
-          " | | ",
-          "-+-+-",
-          " | | ",
-          "-+-+-",
-          " | | \n",
-          "Board Created.",
-          "The game will start with Player X\n",
-        ].join("\n"),
-        [
-          "Player X:",
-          "X| | ",
-          "-+-+-",
-          " | | ",
-          "-+-+-",
-          " | | ",
-          "\n"
-        ].join("\n"),
-        [
-          "Player O:",
-          "X|O| ",
-          "-+-+-",
-          " | | ",
-          "-+-+-",
-          " | | ",
-          "\n"
-        ].join("\n"),
-        [
-          "Player X:",
-          "X|O| ",
-          "-+-+-",
-          "X| | ",
-          "-+-+-",
-          " | | ",
-          "\n"
-        ].join("\n"),
-        [
-          "Player O:",
-          "X|O| ",
-          "-+-+-",
-          "X|O| ",
-          "-+-+-",
-          " | | ",
-          "\n"
-        ].join("\n"),
-        [
-          "Player X:",
-          "X|O| ",
-          "-+-+-",
-          "X|O| ",
-          "-+-+-",
-          "X| | ",
-          "\n"
-        ].join("\n").concat(["PLAYER X WON!"])
-    ]
-
-    expect(game.result()).toEqual(gameResults)
-})
-
 Given("Player O has placed their mark", () => {
     game = new Game()
 })
@@ -193,7 +111,7 @@ Then("the game ends and the results are printed", () => {
           "\n"
         ].join("\n"),
         [
-          "Player X:",
+          "Player O:",
           "X| |X",
           "-+-+-",
           "O|O|O",
@@ -210,4 +128,4 @@ After(() => {
     mathRandomSpy.mockRestore()
 })
 
-Fusion("WinningConditions.feature")
+Fusion("HorizontalWinningCondition.feature")

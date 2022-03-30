@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                                                               Refactor code
+-                                                                                                                                                                 Refactor code
 
 # Pomodoro 7
 
@@ -361,3 +361,7 @@ Navigator: Szilvia
 -   ✅ Horizontal winning unit test 2.2.5 - board.test - red
 -   ✅ Horizontal winning unit test 2.2.5 - board.test - green
 -   ✅ Horizontal winning unit test 2.2.4 - game.test - green
+-   ✅ Horizontal winning unit test 2.2.6 - game.test - green
+-   ✅ Add Scenario for the horizontal winning condition
+-   ✅ Create separate step files and features for different winning conditions
+-   ✅ Horizontal winning uat 2.2. BDD test green
