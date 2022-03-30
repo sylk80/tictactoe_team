@@ -71,6 +71,17 @@ class Board {
         }
         return markHasWon
     }
+
+    checkForHorizontalWin(mark) {
+        let markHasWon = null
+        for (let row = 0; row < 3; row++) {
+            markHasWon = this.checkForRowWin(mark, row)
+            if (markHasWon) {
+                break
+            }
+        }
+        return markHasWon
+    }
 }
 
 module.exports = Board

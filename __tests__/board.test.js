@@ -79,16 +79,16 @@ describe("Given a TicTacToe board", () => {
 
                     expect(board.checkForRowWin(mark, rowNumber)).toEqual(true)
                 })
+
+                test("Then the board horizontal win-check confirms whether the mark has won", () => {
+                    const mark = "O"
+                    board.placeMark([rowNumber, 0], mark)
+                    board.placeMark([rowNumber, 1], mark)
+                    board.placeMark([rowNumber, 2], mark)
+
+                    expect(board.checkForHorizontalWin(mark)).toEqual(true)
+                })
             }
         )
-
-        test("Then the board horizontal win-check confirms whether the mark has won", () => {
-            const mark = "O"
-            board.placeMark([2, 0], mark)
-            board.placeMark([2, 1], mark)
-            board.placeMark([2, 2], mark)
-
-            expect(board.checkForHorizontalWin(mark)).toEqual(true)
-        })
     })
 })
