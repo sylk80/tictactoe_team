@@ -14,14 +14,8 @@ const {
     POSITIONS,
 } = require("../__tests__/utils/playermove.mock")
 
-const {
-    FIRST_ROW,
-    SECOND_ROW,
-    FIRST_COLUMN,
-    SECOND_COLUMN,
-    THIRD_ROW,
-    THIRD_COLUMN,
-} = POSITIONS
+const { FIRST_ROW, SECOND_ROW, FIRST_COLUMN, SECOND_COLUMN, THIRD_ROW } =
+    POSITIONS
 
 let mathRandomSpy
 
