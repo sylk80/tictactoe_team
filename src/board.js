@@ -73,7 +73,7 @@ class Board {
     }
 
     checkForHorizontalWin(mark) {
-        let markHasWon = null
+        let markHasWon = false
         for (let row = 0; row < 3; row++) {
             markHasWon = this.checkForRowWin(mark, row)
             if (markHasWon) {
@@ -81,6 +81,14 @@ class Board {
             }
         }
         return markHasWon
+    }
+
+    checkForDiagonalWin(mark) {
+        const topLeftToBottomRight =
+            this.board[0][0] + this.board[1][1] + this.board[1][1]
+        const winCondition = mark.repeat(3)
+
+        return topLeftToBottomRight === winCondition
     }
 }
 
