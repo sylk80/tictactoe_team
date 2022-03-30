@@ -3,8 +3,8 @@
 # Force script to stop as soon as something fails, rather than continuing
 set -eo pipefail
 
-source "./config/constants.sh"
-source "./utils/ibmcloud.sh"
+source "./scripts/config/constants.sh"
+source "./scripts/utils/ibmcloud.sh"
 
 ibmcloud_login
 
