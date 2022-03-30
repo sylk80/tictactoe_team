@@ -67,6 +67,7 @@ describe("Given a TicTacToe board", () => {
         describe.each([
             ["top", 0],
             ["middle", 1],
+            ["bottom", 2],
         ])(
             "And there are three of the same mark in the %s row",
             (row, rowNumber) => {
