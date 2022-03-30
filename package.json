@@ -18,6 +18,9 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "dependencies": {
+        "husky": "^6.0.0"
+    },
     "devDependencies": {
         "@commitlint/cli": "^16.2.1",
         "@commitlint/config-conventional": "^16.2.1",
@@ -29,7 +32,6 @@
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^3.4.0",
         "eslint": "^7.29.0",
-        "husky": "^6.0.0",
         "jest-cucumber-fusion": "^0.8.1",
         "jest-sonar-reporter": "^2.0.0",
         "jest": "^26.6.3",
@@ -51,6 +53,5 @@
             "/__tests__/",
             "/coverage/"
         ]
-    },
-    "dependencies": {}
+    }
 }
