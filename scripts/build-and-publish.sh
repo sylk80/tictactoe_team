@@ -1,8 +1,7 @@
 #!/bin/sh
 
 # Force script to stop as soon as something fails, rather than continuing
-set -o pipefail
-set -e
+# set -eo pipefail
 
 source "./scripts/config/constants.sh"
 source "scripts/utils/ibmcloud.sh"
