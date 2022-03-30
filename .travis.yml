@@ -1,4 +1,6 @@
 language: node_js
+services:
+  - docker
 node_js:
   - 16
 addons:
@@ -8,6 +10,9 @@ addons:
       secure: "G/B22zCrbqfN0PfZH1/9LmZn6inlH4ezo2ymKgGGxOY3wU67dQC2+m8dZoyQeyKEu04x+xSR04oGzY6RjnqWZtY+C3n2QGCqGNHG2Wsq4H9fmRO9Gh3qthL4ceNnGQUg8GNoAxb73RQUMQV9NV7kv5zJ8pDBK0rQ3gBfSSgJzNHeyWqFOzz4Zw6JsqAFyAvqm9mOpBdMLiJ77GpnloRvMnBQbN0SqGf7dPa/6DxK32krNwijincMpygJMFOaN94BbRlp1tHpFwtV8BTDJDq5PvNiGO8ae+OSOy1BNn151dtpxMuwdGA0qITTiJWRwoJVbNK6B2RZJO+cb7FhzuAZKZBXkIGTBzrLuFgZULWWOR4Py9OCMSiMHNM3irhwvXufCS0xZT06PnmZjxW2qXYjRh/9fg1dV4N3OofCG/m4GrszypiNUg78/hq8Z4t/cLaFRlfm5dtILHo/LwqFmBoMIQ2/SVSZrpjrVVVSIf5hu7Wd/h9NunPIiXO4Z2uDaG6zPKYKeK70Teay0XeXqJnMurIKuaE8ux0IedXkB5j5eExZNtSwlgaOP92qqXoYrgHX84qUNyPB6APPSrjj9zUrX4MdOE5TPBODitsoLzthpD9si8k4Ru0pSgTIS4oODFzfuQx7zPHvSGYzHKp/qeRB3APx1e2b06HXJagPB+tkMWA="
 before_install:
   - npm i -g npm@8.3.1
+stages:
+- name: Test
+- name: Build
 jobs:
   include:
   - stage: Test
