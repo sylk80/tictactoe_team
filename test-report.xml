@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
-    <testCase name="Game Flow Game Board Creation Phase" duration="5"/>
-    <testCase name="Game Flow First Round" duration="4"/>
-    <testCase name="Game Flow Second Round" duration="1"/>
-    <testCase name="Game Flow Last Rond" duration="1"/>
-  </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/winningconditions.steps.js">
-    <testCase name="Winning Conditions Vertical winning condition" duration="17">
+    <testCase name="Winning Conditions Vertical winning condition" duration="16">
       <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
 
 - Expected  - 17
@@ -72,5 +66,11 @@
     at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-cucumber/src/feature-definition-creation.ts:134:65
     at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testCase>
+  </file>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
+    <testCase name="Game Flow Game Board Creation Phase" duration="5"/>
+    <testCase name="Game Flow First Round" duration="1"/>
+    <testCase name="Game Flow Second Round" duration="30"/>
+    <testCase name="Game Flow Last Rond" duration="6"/>
   </file>
 </testExecutions>

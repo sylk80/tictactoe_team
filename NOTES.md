@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                                               Refactor code
+-                                                                                                                                                 Refactor code
 
 # Pomodoro 7
 
@@ -353,5 +353,5 @@ Navigator: Szilvia
 -   ✅ Horizontal winning uat 2.2. BDD test red
 -   ✅ Horizontal winning unit tests 2.2.1 - red
 -   ✅ Horizontal winning unit tests 2.2.1 - green
--   Horizontal winning unit tests 2.2.2
+-   ✅ Horizontal winning unit tests 2.2.2 - red
 -   Horizontal winning unit tests 2.2.3
