@@ -63,5 +63,19 @@ describe("Given a TicTacToe board", () => {
                 })
             }
         )
+
+        describe.each([["top", 0]])(
+            "And there are three of the same mark in the %s row",
+            (row, rowNumber) => {
+                test("Then the board indicates that mark has won", () => {
+                    const mark = "O"
+                    board.placeMark([rowNumber, 0], mark)
+                    board.placeMark([rowNumber, 1], mark)
+                    board.placeMark([rowNumber, 2], mark)
+
+                    expect(board.checkForRowWin(mark, rowNumber)).toEqual(true)
+                })
+            }
+        )
     })
 })
