@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
-    <testCase name="Game Flow Game Board Creation Phase" duration="7"/>
-    <testCase name="Game Flow First Round" duration="1"/>
-    <testCase name="Game Flow Second Round" duration="2"/>
-    <testCase name="Game Flow Last Round" duration="2"/>
-  </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/verticalWinningCondition.steps.js">
-    <testCase name="Vertical Winning Condition Vertical winning condition" duration="15"/>
-  </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/horizontalWinningCondition.steps.js">
-    <testCase name="Horizontal Winning Condition Horizontal winning condition" duration="22"/>
-  </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/diagonalWinningCondition.steps.js">
-    <testCase name="Diagonal Winning Condition Diagonal winning condition" duration="25">
+    <testCase name="Diagonal Winning Condition Diagonal winning condition" duration="39">
       <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
 
-- Expected  -  0
-+ Received  + 32
+- Expected  -  1
++ Received  + 33
 
 @@ -46,7 +46,39 @@
   -+-+-
@@ -25,11 +13,28 @@
   -+-+-
    | |X
 
+- PLAYER X WON!",
 + ",
 +   "Player O:
 + X|O|O
 + -+-+-
-+  |X| 
++ O|X| 
++ -+-+-
++  | |X
++
++ ",
++   "Player X:
++ X|O|O
++ -+-+-
++ O|X|X
++ -+-+-
++  | |X
++
++ ",
++   "Player O:
++ X|O|O
++ -+-+-
++ O|X|X
 + -+-+-
 +  |O|X
 +
@@ -37,31 +42,27 @@
 +   "Player X:
 + X|O|O
 + -+-+-
-+ X|X| 
++ O|X|X
 + -+-+-
-+  |O|X
++ X|O|X
 +
 + ",
-+   "Player O:
-+ X|O|O
-+ -+-+-
-+ X|X| 
-+ -+-+-
-+ O|O|X
-+
-+ ",
-+   "Player X:
-+ X|O|O
-+ -+-+-
-+ X|X|X
-+ -+-+-
-+ O|O|X
-+
-  PLAYER X WON!",
   ]
     at Object.stepFunction (/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/diagonalWinningCondition.steps.js:113:27)
     at /Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/node_modules/jest-cucumber/src/feature-definition-creation.ts:134:65
     at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testCase>
+  </file>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/horizontalWinningCondition.steps.js">
+    <testCase name="Horizontal Winning Condition Horizontal winning condition" duration="56"/>
+  </file>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/verticalWinningCondition.steps.js">
+    <testCase name="Vertical Winning Condition Vertical winning condition" duration="9"/>
+  </file>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
+    <testCase name="Game Flow Game Board Creation Phase" duration="10"/>
+    <testCase name="Game Flow First Round" duration="2"/>
+    <testCase name="Game Flow Second Round" duration="1"/>
+    <testCase name="Game Flow Last Round" duration="1"/>
   </file>
 </testExecutions>

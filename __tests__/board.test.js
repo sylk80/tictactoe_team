@@ -91,14 +91,31 @@ describe("Given a TicTacToe board", () => {
             }
         )
 
-        describe.each([["top left to bottom right"]])(
+        describe.each([
+            [
+                "top left to bottom right",
+                [
+                    [0, 0],
+                    [1, 1],
+                    [2, 2],
+                ],
+            ],
+            [
+                "top right to bottom left",
+                [
+                    [0, 2],
+                    [1, 1],
+                    [2, 0],
+                ],
+            ],
+        ])(
             "And there are three of the same mark going from %s",
-            (row) => {
+            (title, positions) => {
                 test("Then the board indicates that mark has won", () => {
                     const mark = "O"
-                    board.placeMark([0, 0], mark)
-                    board.placeMark([1, 1], mark)
-                    board.placeMark([2, 2], mark)
+                    positions.forEach(([row, column]) => {
+                        board.placeMark([row, column], mark)
+                    })
 
                     expect(board.checkForDiagonalWin(mark)).toEqual(true)
                 })
