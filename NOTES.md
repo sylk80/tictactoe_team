@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                                                             Refactor code
+-                                                                                                                                                               Refactor code
 
 # Pomodoro 7
 
@@ -358,6 +358,6 @@ Navigator: Szilvia
 -   ✅ Horizontal winning unit tests 2.2.3 - red
 -   ✅ Horizontal winning unit tests 2.2.3 - green
 -   ✅ Horizontal winning unit test 2.2.4 - game.test - red
--   ✅ Horizontal winning unit test 2.2.4 - game.test - green
 -   ✅ Horizontal winning unit test 2.2.5 - board.test - red
 -   ✅ Horizontal winning unit test 2.2.5 - board.test - green
+-   ✅ Horizontal winning unit test 2.2.4 - game.test - green

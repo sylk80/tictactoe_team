@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
-    <testCase name="Game Flow Game Board Creation Phase" duration="7"/>
-    <testCase name="Game Flow First Round" duration="1"/>
-    <testCase name="Game Flow Second Round" duration="2"/>
-    <testCase name="Game Flow Last Rond" duration="0"/>
+    <testCase name="Game Flow Game Board Creation Phase" duration="5"/>
+    <testCase name="Game Flow First Round" duration="2"/>
+    <testCase name="Game Flow Second Round" duration="1"/>
+    <testCase name="Game Flow Last Rond" duration="1"/>
   </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/winningconditions.steps.js">
-    <testCase name="Winning Conditions Vertical winning condition" duration="21">
+    <testCase name="Winning Conditions Vertical winning condition" duration="19">
       <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
 
 - Expected  - 17

@@ -21,7 +21,9 @@ class Game {
     }
 
     checkBoardForWin(player) {
-        const winner = this.board.checkForVerticalWin(player.mark)
+        const winner =
+            this.board.checkForVerticalWin(player.mark) ||
+            this.board.checkForHorizontalWin(player.mark)
         if (winner) {
             this.gameLog[
                 this.gameLog.length - 1
