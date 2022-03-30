@@ -241,4 +241,34 @@ describe("Given a TicTacToe game", () => {
             })
         })
     })
+
+    describe("When Player O has placed their mark", () => {
+        describe("And the O marks fulfil a horizontal winning condition", () => {
+            let game
+
+            beforeEach(() => {
+                game = new Game()
+
+                // Player X
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, FIRST_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, FIRST_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [FIRST_ROW, THIRD_ROW])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, SECOND_COLUMN])
+                // Player X
+                mockPlayerMove(mathRandomSpy, [THIRD_ROW, FIRST_COLUMN])
+                // Player O
+                mockPlayerMove(mathRandomSpy, [SECOND_ROW, THIRD_COLUMN])
+
+                game.play()
+            })
+
+            test('Then the "PLAYER O WON!" message is printed', () => {
+                const winningRound = game.result()[6]
+                expect(winningRound).toContain("PLAYER O WON!")
+            })
+        })
+    })
 })
