@@ -85,10 +85,16 @@ class Board {
 
     checkForDiagonalWin(mark) {
         const topLeftToBottomRight =
-            this.board[0][0] + this.board[1][1] + this.board[1][1]
+            this.board[0][0] + this.board[1][1] + this.board[2][2]
+        const topRightToBottomLeft =
+            this.board[0][2] + this.board[1][1] + this.board[2][0]
+
         const winCondition = mark.repeat(3)
 
-        return topLeftToBottomRight === winCondition
+        return (
+            topLeftToBottomRight === winCondition ||
+            topRightToBottomLeft === winCondition
+        )
     }
 }
 
