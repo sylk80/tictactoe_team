@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/horizontalWinningCondition.steps.js">
-    <testCase name="Horizontal Winning Condition Horizontal winning condition" duration="5"/>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/verticalWinningCondition.steps.js">
+    <testCase name="Vertical Winning Condition Vertical winning condition" duration="6"/>
   </file>
   <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/gameflow.steps.js">
-    <testCase name="Game Flow Game Board Creation Phase" duration="6"/>
+    <testCase name="Game Flow Game Board Creation Phase" duration="7"/>
     <testCase name="Game Flow First Round" duration="1"/>
     <testCase name="Game Flow Second Round" duration="1"/>
     <testCase name="Game Flow Last Round" duration="1"/>
   </file>
-  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/verticalWinningCondition.steps.js">
-    <testCase name="Vertical Winning Condition Vertical winning condition" duration="5"/>
+  <file path="/Users/julian.ostmo@ibm.com/Documents/Training/XP Farm/tictactoe_team/features/horizontalWinningCondition.steps.js">
+    <testCase name="Horizontal Winning Condition Horizontal winning condition" duration="5"/>
   </file>
 </testExecutions>
