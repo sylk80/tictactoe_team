@@ -53,6 +53,14 @@ class Board {
         return columnValues === winCondition
     }
 
+    checkForRowWin(mark, row) {
+        const rowValues = this.board[0].join("")
+
+        const winCondition = mark.repeat(3)
+
+        return rowValues === winCondition
+    }
+
     checkForVerticalWin(mark) {
         let markHasWon = false
         for (let column = 0; column < 3; column++) {
