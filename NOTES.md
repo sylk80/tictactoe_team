@@ -105,7 +105,7 @@ Navigator: Szilvia
 -   ✅ Run unit test red phase and commit
 -   ✅ Modify code of origin
 -   ✅ Run unit test green phase and commit
--                                                                                                                                                                 Refactor code
+-                                                                                                                                                                     Refactor code
 
 # Pomodoro 7
 
@@ -341,6 +341,8 @@ Navigator: Szilvia
 
 # Pomodoro 24
 
+Driver: Julian
+
 -   CI/CD:
     -   add `build-and-publish.sh` script and add it to Travis
     -   add and complete `initialise-environment.sh`
@@ -365,3 +367,14 @@ Navigator: Szilvia
 -   ✅ Add Scenario for the horizontal winning condition
 -   ✅ Create separate step files and features for different winning conditions
 -   ✅ Horizontal winning uat 2.2. BDD test green
+
+# Pomodoro 26
+
+Driver: Julian
+
+-   UAT 2.3 - Diagonal winning condition
+-   unit tests
+    -   Then Player X has 3 X marks diagonally from top-left to bottom-right
+    -   Then Player X has 3 X marks diagonally from top-right to bottom-left
+    -   Then the "PLAYER X WON!" message is printed
+    -   Then the game ends
