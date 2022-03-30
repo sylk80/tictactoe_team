@@ -269,6 +269,12 @@ describe("Given a TicTacToe game", () => {
                 const winningRound = game.result()[6]
                 expect(winningRound).toContain("PLAYER O WON!")
             })
+
+            describe("And Player O is announced as the winner", () => {
+                test("Then the game ends", () => {
+                    expect(game.result().length).toEqual(7)
+                })
+            })
         })
     })
 })
